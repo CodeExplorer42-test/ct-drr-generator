@@ -1,0 +1,28 @@
+CT VOLUME ANALYSIS SUMMARY
+==================================================
+
+Analysis Date: 2025-05-23 00:53:50
+Data Directory: /Users/sankaranarayanan/Downloads/ctdownloader/data/tciaDownload/1.3.6.1.4.1.32722.99.99.298991776521342375010861296712563382046
+
+VOLUME INFORMATION:
+------------------------------
+Number of slices: 134
+Volume dimensions: (512, 512, 134)
+Voxel spacing (mm): (0.9765625, 0.9765625, 3.0)
+Physical size (cm): [50.0, 50.0, 40.2]
+Memory size: 134.00 MB
+
+INTENSITY STATISTICS:
+------------------------------
+Min: -1024.00
+Max: 3034.00
+Mean: -741.39
+Std: 426.96
+
+SUGGESTED DRR PARAMETERS:
+------------------------------
+Source-to-Detector Distance: 1000.0 mm
+Source-to-Patient Distance: 600.0 mm
+Detector Size: [430, 430] mm
+Window Level: -938.00
+Window Width: 1079.00

@@ -1,0 +1,27 @@
+# DRR Generator Dependencies
+# Medical imaging and DICOM processing
+SimpleITK>=2.5.0
+
+# Scientific computing and arrays
+numpy>=2.2.0
+
+# Data manipulation and analysis
+pandas>=2.2.0
+
+# Plotting and visualization
+matplotlib>=3.10.0
+
+# Image processing
+pillow>=11.0.0
+
+# TCIA data access
+tcia_utils>=2.4.0
+
+# HTTP requests for data download
+requests>=2.32.0
+
+# Scientific computing (for ray-casting interpolation)
+scipy>=1.15.0
+
+# Additional packages (automatically installed with above)
+# pydicom (comes with tcia_utils) 
