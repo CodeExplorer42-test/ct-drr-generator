@@ -1,0 +1,116 @@
+[2025-05-24 01:02:46] ================================================================================
+[2025-05-24 01:02:46] V6 Optimized Stereo DRR Generator
+[2025-05-24 01:02:46] ================================================================================
+[2025-05-24 01:02:46] Features:
+[2025-05-24 01:02:46]   • Advanced 7-tissue segmentation
+[2025-05-24 01:02:46]   • Fast parallel projection (5-10 seconds per view)
+[2025-05-24 01:02:46]   • Scatter simulation for realism
+[2025-05-24 01:02:46]   • Depth map generation
+[2025-05-24 01:02:46]   • Multi-baseline support
+[2025-05-24 01:02:46]   • Up to 2400 DPI resolution
+[2025-05-24 01:02:46] ================================================================================
+[2025-05-24 01:02:46] 
+Processing: NSCLC-Radiomics (LUNG1-001)
+[2025-05-24 01:02:46] Loading 134 DICOM files...
+[2025-05-24 01:02:47] 
+--- V6 Stereo Generation: AP view ---
+[2025-05-24 01:02:47] V6 DRR generation - AP view, resolution: 1200 DPI
+[2025-05-24 01:02:47] Volume shape: (134, 512, 512), spacing: [0.9765625 0.9765625 3.       ] mm
+[2025-05-24 01:02:48] Attenuation range: [0.00000, 0.23033] mm^-1
+[2025-05-24 01:02:48] Applying shear transformation: -2.5°
+[2025-05-24 01:02:48] Path integral range: [0.0, 11.7]
+[2025-05-24 01:02:48] Detector: 1800x2160 pixels at 1200 DPI
+[2025-05-24 01:02:48] V6 DRR generation - AP view, resolution: 1200 DPI
+[2025-05-24 01:02:48] Volume shape: (134, 512, 512), spacing: [0.9765625 0.9765625 3.       ] mm
+[2025-05-24 01:02:49] Attenuation range: [0.00000, 0.23033] mm^-1
+[2025-05-24 01:02:49] Path integral range: [0.0, 11.2]
+[2025-05-24 01:02:49] Detector: 1800x2160 pixels at 1200 DPI
+[2025-05-24 01:02:49] V6 DRR generation - AP view, resolution: 1200 DPI
+[2025-05-24 01:02:49] Volume shape: (134, 512, 512), spacing: [0.9765625 0.9765625 3.       ] mm
+[2025-05-24 01:02:50] Attenuation range: [0.00000, 0.23033] mm^-1
+[2025-05-24 01:02:50] Applying shear transformation: 2.5°
+[2025-05-24 01:02:50] Path integral range: [0.0, 11.2]
+[2025-05-24 01:02:50] Detector: 1800x2160 pixels at 1200 DPI
+[2025-05-24 01:02:50] Generating depth map...
+[2025-05-24 01:02:57] Depth map complete
+[2025-05-24 01:02:57] ✅ V6 stereo set complete: 40px shift, 5.0° angle
+[2025-05-24 01:03:00] Saved all outputs for LUNG1-001 - AP
+[2025-05-24 01:03:00] 
+--- V6 Stereo Generation: Lateral view ---
+[2025-05-24 01:03:00] V6 DRR generation - Lateral view, resolution: 1200 DPI
+[2025-05-24 01:03:00] Volume shape: (134, 512, 512), spacing: [0.9765625 0.9765625 3.       ] mm
+[2025-05-24 01:03:01] Attenuation range: [0.00000, 0.23033] mm^-1
+[2025-05-24 01:03:01] Applying shear transformation: -2.5°
+[2025-05-24 01:03:01] Path integral range: [0.0, 15.0]
+[2025-05-24 01:03:02] Detector: 2160x1800 pixels at 1200 DPI
+[2025-05-24 01:03:02] V6 DRR generation - Lateral view, resolution: 1200 DPI
+[2025-05-24 01:03:02] Volume shape: (134, 512, 512), spacing: [0.9765625 0.9765625 3.       ] mm
+[2025-05-24 01:03:03] Attenuation range: [0.00000, 0.23033] mm^-1
+[2025-05-24 01:03:03] Path integral range: [0.0, 15.0]
+[2025-05-24 01:03:03] Detector: 2160x1800 pixels at 1200 DPI
+[2025-05-24 01:03:03] V6 DRR generation - Lateral view, resolution: 1200 DPI
+[2025-05-24 01:03:03] Volume shape: (134, 512, 512), spacing: [0.9765625 0.9765625 3.       ] mm
+[2025-05-24 01:03:04] Attenuation range: [0.00000, 0.23033] mm^-1
+[2025-05-24 01:03:04] Applying shear transformation: 2.5°
+[2025-05-24 01:03:04] Path integral range: [0.0, 15.0]
+[2025-05-24 01:03:04] Detector: 2160x1800 pixels at 1200 DPI
+[2025-05-24 01:03:04] Generating depth map...
+[2025-05-24 01:03:10] Depth map complete
+[2025-05-24 01:03:10] ✅ V6 stereo set complete: 40px shift, 5.0° angle
+[2025-05-24 01:03:14] Saved all outputs for LUNG1-001 - Lateral
+[2025-05-24 01:03:14] 
+Processing: COVID-19-NY-SBU (A670621)
+[2025-05-24 01:03:15] Loading 401 DICOM files...
+[2025-05-24 01:03:15] 
+--- V6 Stereo Generation: AP view ---
+[2025-05-24 01:03:15] V6 DRR generation - AP view, resolution: 1200 DPI
+[2025-05-24 01:03:15] Volume shape: (401, 512, 512), spacing: [0.653 0.653 1.   ] mm
+[2025-05-24 01:03:19] Attenuation range: [0.00000, 1.84323] mm^-1
+[2025-05-24 01:03:19] Applying shear transformation: -2.5°
+[2025-05-24 01:03:19] Path integral range: [0.0, 16.1]
+[2025-05-24 01:03:19] Detector: 1800x2160 pixels at 1200 DPI
+[2025-05-24 01:03:19] V6 DRR generation - AP view, resolution: 1200 DPI
+[2025-05-24 01:03:19] Volume shape: (401, 512, 512), spacing: [0.653 0.653 1.   ] mm
+[2025-05-24 01:03:23] Attenuation range: [0.00000, 1.84323] mm^-1
+[2025-05-24 01:03:23] Path integral range: [0.0, 15.7]
+[2025-05-24 01:03:23] Detector: 1800x2160 pixels at 1200 DPI
+[2025-05-24 01:03:23] V6 DRR generation - AP view, resolution: 1200 DPI
+[2025-05-24 01:03:23] Volume shape: (401, 512, 512), spacing: [0.653 0.653 1.   ] mm
+[2025-05-24 01:03:26] Attenuation range: [0.00000, 1.84323] mm^-1
+[2025-05-24 01:03:26] Applying shear transformation: 2.5°
+[2025-05-24 01:03:27] Path integral range: [0.0, 15.2]
+[2025-05-24 01:03:27] Detector: 1800x2160 pixels at 1200 DPI
+[2025-05-24 01:03:27] Generating depth map...
+[2025-05-24 01:03:34] Depth map complete
+[2025-05-24 01:03:34] ✅ V6 stereo set complete: 40px shift, 5.0° angle
+[2025-05-24 01:03:38] Saved all outputs for A670621 - AP
+[2025-05-24 01:03:38] 
+--- V6 Stereo Generation: Lateral view ---
+[2025-05-24 01:03:38] V6 DRR generation - Lateral view, resolution: 1200 DPI
+[2025-05-24 01:03:38] Volume shape: (401, 512, 512), spacing: [0.653 0.653 1.   ] mm
+[2025-05-24 01:03:41] Attenuation range: [0.00000, 1.84323] mm^-1
+[2025-05-24 01:03:41] Applying shear transformation: -2.5°
+[2025-05-24 01:03:41] Path integral range: [0.0, 14.8]
+[2025-05-24 01:03:42] Detector: 2160x1800 pixels at 1200 DPI
+[2025-05-24 01:03:42] V6 DRR generation - Lateral view, resolution: 1200 DPI
+[2025-05-24 01:03:42] Volume shape: (401, 512, 512), spacing: [0.653 0.653 1.   ] mm
+[2025-05-24 01:03:45] Attenuation range: [0.00000, 1.84323] mm^-1
+[2025-05-24 01:03:45] Path integral range: [0.0, 14.8]
+[2025-05-24 01:03:45] Detector: 2160x1800 pixels at 1200 DPI
+[2025-05-24 01:03:46] V6 DRR generation - Lateral view, resolution: 1200 DPI
+[2025-05-24 01:03:46] Volume shape: (401, 512, 512), spacing: [0.653 0.653 1.   ] mm
+[2025-05-24 01:03:49] Attenuation range: [0.00000, 1.84323] mm^-1
+[2025-05-24 01:03:49] Applying shear transformation: 2.5°
+[2025-05-24 01:03:49] Path integral range: [0.0, 14.8]
+[2025-05-24 01:03:49] Detector: 2160x1800 pixels at 1200 DPI
+[2025-05-24 01:03:49] Generating depth map...
+[2025-05-24 01:03:56] Depth map complete
+[2025-05-24 01:03:56] ✅ V6 stereo set complete: 40px shift, 5.0° angle
+[2025-05-24 01:03:59] Saved all outputs for A670621 - Lateral
+[2025-05-24 01:03:59] 
+================================================================================
+[2025-05-24 01:03:59] V6 Processing Complete
+[2025-05-24 01:03:59] Success rate: 2/2 datasets
+[2025-05-24 01:03:59] Total time: 72.9 seconds
+[2025-05-24 01:03:59] Output directory: outputs/stereo_v6_optimized
+[2025-05-24 01:03:59] ================================================================================
