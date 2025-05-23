@@ -1,0 +1,85 @@
+[2025-05-23 10:37:00] === Stereo DRR Generator Started ===
+[2025-05-23 10:37:00] Stereo angle separation: ±3.0°
+[2025-05-23 10:37:00] 
+Processing dataset: NSCLC-Radiomics
+[2025-05-23 10:37:00] Loading CT volume from: data/tciaDownload/1.3.6.1.4.1.32722.99.99.298991776521342375010861296712563382046
+[2025-05-23 10:37:00] Volume loaded: 512×512×134 voxels
+[2025-05-23 10:37:00] Voxel spacing: (0.98, 0.98, 3.00) mm
+[2025-05-23 10:37:00] Physical size: (500.0, 500.0, 402.0) mm
+[2025-05-23 10:37:00] 
+--- Generating AP stereo pair ---
+[2025-05-23 10:37:00] Generating stereo pair for AP view
+[2025-05-23 10:37:00] Generating left eye view (-3°)
+[2025-05-23 10:37:00] Generating AP projection at angle -3.0°
+[2025-05-23 10:37:00] Generating right eye view (+3°)
+[2025-05-23 10:37:01] Generating AP projection at angle 3.0°
+[2025-05-23 10:37:01] Generating center view (0°)
+[2025-05-23 10:37:01] Generating AP projection at angle 0.0°
+[2025-05-23 10:37:01] Saved left eye: outputs/stereo/drr_LUNG1-001_AP_left.png
+[2025-05-23 10:37:01] Saved right eye: outputs/stereo/drr_LUNG1-001_AP_right.png
+[2025-05-23 10:37:01] Saved center: outputs/stereo/drr_LUNG1-001_AP_center.png
+[2025-05-23 10:37:02] Saved comparison: outputs/stereo/drr_LUNG1-001_AP_stereo_comparison.png
+[2025-05-23 10:37:02] Creating anaglyph 3D image
+[2025-05-23 10:37:02] Saved anaglyph: outputs/stereo/drr_LUNG1-001_AP_anaglyph.png
+[2025-05-23 10:37:02] 
+--- Generating Lateral stereo pair ---
+[2025-05-23 10:37:02] Generating stereo pair for Lateral view
+[2025-05-23 10:37:02] Generating left eye view (-3°)
+[2025-05-23 10:37:02] Generating Lateral projection at angle -3.0°
+[2025-05-23 10:37:02] Generating right eye view (+3°)
+[2025-05-23 10:37:02] Generating Lateral projection at angle 3.0°
+[2025-05-23 10:37:02] Generating center view (0°)
+[2025-05-23 10:37:02] Generating Lateral projection at angle 0.0°
+[2025-05-23 10:37:02] Saved left eye: outputs/stereo/drr_LUNG1-001_Lateral_left.png
+[2025-05-23 10:37:02] Saved right eye: outputs/stereo/drr_LUNG1-001_Lateral_right.png
+[2025-05-23 10:37:02] Saved center: outputs/stereo/drr_LUNG1-001_Lateral_center.png
+[2025-05-23 10:37:03] Saved comparison: outputs/stereo/drr_LUNG1-001_Lateral_stereo_comparison.png
+[2025-05-23 10:37:03] Creating anaglyph 3D image
+[2025-05-23 10:37:03] Saved anaglyph: outputs/stereo/drr_LUNG1-001_Lateral_anaglyph.png
+[2025-05-23 10:37:03] ✅ Successfully generated stereo pairs for NSCLC-Radiomics
+[2025-05-23 10:37:03] 
+Processing dataset: COVID-19-NY-SBU
+[2025-05-23 10:37:03] Loading CT volume from: data/tciaDownload/1.3.6.1.4.1.14519.5.2.1.99.1071.29029751181371965166204843962164
+[2025-05-23 10:37:04] Volume loaded: 512×512×401 voxels
+[2025-05-23 10:37:04] Voxel spacing: (0.65, 0.65, 1.00) mm
+[2025-05-23 10:37:04] Physical size: (334.3, 334.3, 401.0) mm
+[2025-05-23 10:37:04] 
+--- Generating AP stereo pair ---
+[2025-05-23 10:37:04] Generating stereo pair for AP view
+[2025-05-23 10:37:04] Generating left eye view (-3°)
+[2025-05-23 10:37:04] Generating AP projection at angle -3.0°
+[2025-05-23 10:37:04] Generating right eye view (+3°)
+[2025-05-23 10:37:05] Generating AP projection at angle 3.0°
+[2025-05-23 10:37:05] Generating center view (0°)
+[2025-05-23 10:37:05] Generating AP projection at angle 0.0°
+[2025-05-23 10:37:05] Saved left eye: outputs/stereo/drr_A670621_AP_left.png
+[2025-05-23 10:37:05] Saved right eye: outputs/stereo/drr_A670621_AP_right.png
+[2025-05-23 10:37:06] Saved center: outputs/stereo/drr_A670621_AP_center.png
+[2025-05-23 10:37:06] Saved comparison: outputs/stereo/drr_A670621_AP_stereo_comparison.png
+[2025-05-23 10:37:06] Creating anaglyph 3D image
+[2025-05-23 10:37:07] Saved anaglyph: outputs/stereo/drr_A670621_AP_anaglyph.png
+[2025-05-23 10:37:07] 
+--- Generating Lateral stereo pair ---
+[2025-05-23 10:37:07] Generating stereo pair for Lateral view
+[2025-05-23 10:37:07] Generating left eye view (-3°)
+[2025-05-23 10:37:07] Generating Lateral projection at angle -3.0°
+[2025-05-23 10:37:07] Generating right eye view (+3°)
+[2025-05-23 10:37:07] Generating Lateral projection at angle 3.0°
+[2025-05-23 10:37:07] Generating center view (0°)
+[2025-05-23 10:37:07] Generating Lateral projection at angle 0.0°
+[2025-05-23 10:37:08] Saved left eye: outputs/stereo/drr_A670621_Lateral_left.png
+[2025-05-23 10:37:08] Saved right eye: outputs/stereo/drr_A670621_Lateral_right.png
+[2025-05-23 10:37:09] Saved center: outputs/stereo/drr_A670621_Lateral_center.png
+[2025-05-23 10:37:09] Saved comparison: outputs/stereo/drr_A670621_Lateral_stereo_comparison.png
+[2025-05-23 10:37:09] Creating anaglyph 3D image
+[2025-05-23 10:37:09] Saved anaglyph: outputs/stereo/drr_A670621_Lateral_anaglyph.png
+[2025-05-23 10:37:09] ✅ Successfully generated stereo pairs for COVID-19-NY-SBU
+[2025-05-23 10:37:09] 
+=== Stereo DRR Generation Complete ===
+[2025-05-23 10:37:09] Output directory: outputs/stereo
+[2025-05-23 10:37:09] 
+Stereo pairs can be used for:
+[2025-05-23 10:37:09] 1. 3D reconstruction algorithms
+[2025-05-23 10:37:09] 2. Depth perception in medical visualization
+[2025-05-23 10:37:09] 3. Stereoscopic display systems
+[2025-05-23 10:37:09] 4. Training AI models for 3D understanding

@@ -1,0 +1,72 @@
+[2025-05-23 11:08:43] === Stereo DRR Generator V3 Started ===
+[2025-05-23 11:08:43] Using horizontal shift of 10 pixels for stereo effect
+[2025-05-23 11:08:43] Based on proven drr_refined.py implementation
+[2025-05-23 11:08:43] 
+Processing dataset: NSCLC-Radiomics
+[2025-05-23 11:08:44] Loaded 134 DICOM files
+[2025-05-23 11:08:44] 
+--- Generating stereo pair for AP view ---
+[2025-05-23 11:08:44] Generating AP projection
+[2025-05-23 11:08:44] Volume shape (Z,Y,X): (134, 512, 512)
+[2025-05-23 11:08:44] HU range: [-1024, 3034]
+[2025-05-23 11:08:45] Path integral range: [0.0, 5.8]
+[2025-05-23 11:08:45] ✅ Generated stereo pair with 10 pixel shift
+[2025-05-23 11:08:45] Saved: outputs/stereo_v3/drr_LUNG1-001_AP_left.png
+[2025-05-23 11:08:45] Saved: outputs/stereo_v3/drr_LUNG1-001_AP_center.png
+[2025-05-23 11:08:45] Saved: outputs/stereo_v3/drr_LUNG1-001_AP_right.png
+[2025-05-23 11:08:46] Saved comparison: outputs/stereo_v3/drr_LUNG1-001_AP_stereo_comparison.png
+[2025-05-23 11:08:46] Saved anaglyph: outputs/stereo_v3/drr_LUNG1-001_AP_anaglyph.png
+[2025-05-23 11:08:46] Image stats - Min: 0.000, Max: 1.000, Unique values: 54678
+[2025-05-23 11:08:46] 
+--- Generating stereo pair for Lateral view ---
+[2025-05-23 11:08:46] Generating Lateral projection
+[2025-05-23 11:08:46] Volume shape (Z,Y,X): (134, 512, 512)
+[2025-05-23 11:08:46] HU range: [-1024, 3034]
+[2025-05-23 11:08:47] Path integral range: [0.0, 8.2]
+[2025-05-23 11:08:47] ✅ Generated stereo pair with 10 pixel shift
+[2025-05-23 11:08:47] Saved: outputs/stereo_v3/drr_LUNG1-001_Lateral_left.png
+[2025-05-23 11:08:47] Saved: outputs/stereo_v3/drr_LUNG1-001_Lateral_center.png
+[2025-05-23 11:08:47] Saved: outputs/stereo_v3/drr_LUNG1-001_Lateral_right.png
+[2025-05-23 11:08:47] Saved comparison: outputs/stereo_v3/drr_LUNG1-001_Lateral_stereo_comparison.png
+[2025-05-23 11:08:47] Saved anaglyph: outputs/stereo_v3/drr_LUNG1-001_Lateral_anaglyph.png
+[2025-05-23 11:08:47] Image stats - Min: 0.000, Max: 1.000, Unique values: 50615
+[2025-05-23 11:08:47] 
+Processing dataset: COVID-19-NY-SBU
+[2025-05-23 11:08:48] Loaded 401 DICOM files
+[2025-05-23 11:08:48] 
+--- Generating stereo pair for AP view ---
+[2025-05-23 11:08:48] Generating AP projection
+[2025-05-23 11:08:48] Volume shape (Z,Y,X): (401, 512, 512)
+[2025-05-23 11:08:48] HU range: [-13297, 32767]
+[2025-05-23 11:08:52] Path integral range: [0.0, 6.0]
+[2025-05-23 11:08:52] ✅ Generated stereo pair with 10 pixel shift
+[2025-05-23 11:08:52] Saved: outputs/stereo_v3/drr_A670621_AP_left.png
+[2025-05-23 11:08:52] Saved: outputs/stereo_v3/drr_A670621_AP_center.png
+[2025-05-23 11:08:52] Saved: outputs/stereo_v3/drr_A670621_AP_right.png
+[2025-05-23 11:08:53] Saved comparison: outputs/stereo_v3/drr_A670621_AP_stereo_comparison.png
+[2025-05-23 11:08:53] Saved anaglyph: outputs/stereo_v3/drr_A670621_AP_anaglyph.png
+[2025-05-23 11:08:53] Image stats - Min: 0.000, Max: 1.000, Unique values: 203926
+[2025-05-23 11:08:53] 
+--- Generating stereo pair for Lateral view ---
+[2025-05-23 11:08:53] Generating Lateral projection
+[2025-05-23 11:08:53] Volume shape (Z,Y,X): (401, 512, 512)
+[2025-05-23 11:08:53] HU range: [-13297, 32767]
+[2025-05-23 11:08:57] Path integral range: [0.0, 7.3]
+[2025-05-23 11:08:57] ✅ Generated stereo pair with 10 pixel shift
+[2025-05-23 11:08:57] Saved: outputs/stereo_v3/drr_A670621_Lateral_left.png
+[2025-05-23 11:08:57] Saved: outputs/stereo_v3/drr_A670621_Lateral_center.png
+[2025-05-23 11:08:58] Saved: outputs/stereo_v3/drr_A670621_Lateral_right.png
+[2025-05-23 11:08:58] Saved comparison: outputs/stereo_v3/drr_A670621_Lateral_stereo_comparison.png
+[2025-05-23 11:08:58] Saved anaglyph: outputs/stereo_v3/drr_A670621_Lateral_anaglyph.png
+[2025-05-23 11:08:58] Image stats - Min: 0.000, Max: 1.000, Unique values: 181892
+[2025-05-23 11:08:58] 
+=== Stereo DRR Generation Complete ===
+[2025-05-23 11:08:58] Success rate: 4/4 projections
+[2025-05-23 11:08:58] ✅ SUCCESS: All stereo pairs generated
+[2025-05-23 11:08:58] 
+Output directory: outputs/stereo_v3
+[2025-05-23 11:08:58] 
+Note: The horizontal shift creates a parallax effect suitable for:
+[2025-05-23 11:08:58] - Depth perception when viewed with stereo display
+[2025-05-23 11:08:58] - Input to stereo matching algorithms
+[2025-05-23 11:08:58] - 3D reconstruction using disparity maps

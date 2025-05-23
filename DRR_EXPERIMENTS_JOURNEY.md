@@ -266,11 +266,140 @@ intensity = np.power(intensity, 1.0/1.2)
 - V4 (ray-casting): >60 seconds per view
 - V8 (final): ~5 seconds per view (includes resampling)
 
-## Future Work
+## Stereo DRR Experiments (2025-01-23)
+
+### The Challenge: 3D Reconstruction from DRR Pairs
+
+After achieving clinical-quality DRRs, we attempted to generate stereo pairs for 3D reconstruction applications. The goal was to create DRR pairs with 3-degree angular separation that could be used for:
+- Depth map estimation
+- 3D surface reconstruction
+- Stereoscopic visualization
+- AI training for 2D-to-3D conversion
+
+### Dataset Expansion
+
+We acquired a second CT dataset from TCIA:
+- **Collection**: COVID-19-NY-SBU
+- **Patient ID**: A670621
+- **Slices**: 401
+- **Spacing**: (0.65, 0.65, 1.0) mm
+- **Scanner**: TOSHIBA Aquilion ONE
+
+### Stereo Version 1: Volume Rotation Approach
+**Script**: `drr_stereo.py`  
+**Status**: ❌ Complete failure
+
+#### Approach:
+```python
+# Rotate entire volume for stereo views
+def rotate_volume(volume, angle_degrees, axis='z'):
+    transform = sitk.Euler3DTransform()
+    transform.SetCenter(center)
+    transform.SetRotation(0, 0, angle_radians)
+    
+    resampler = sitk.ResampleImageFilter()
+    resampler.SetReferenceImage(volume)
+    resampler.SetInterpolator(sitk.sitkLinear)
+    resampler.SetDefaultPixelValue(-1000)  # Air value
+    resampler.SetTransform(transform)
+    
+    rotated_volume = resampler.Execute(volume)
+    return rotated_volume
+```
+
+#### Results:
+![Failed Stereo V1](outputs/stereo/drr_LUNG1-001_AP_stereo_comparison.png)
+
+#### Why It Failed:
+- SimpleITK resampling corrupted the data during rotation
+- Lost proper HU values in transformation
+- Default pixel value (-1000) dominated the rotated volume
+- Produced completely black images
+
+### Stereo Version 2: Sheared Projection
+**Script**: `drr_stereo_v2.py`  
+**Status**: ❌ Timeout failure
+
+#### Approach:
+```python
+# Implement sheared projection for stereo
+for z in range(mu_volume.shape[0]):
+    for x in range(mu_volume.shape[2]):
+        ray_sum = 0
+        for y in range(mu_volume.shape[1]):
+            # Calculate sheared X position
+            x_sheared = x + int(y * np.tan(shear_rad))
+            if 0 <= x_sheared < mu_volume.shape[2]:
+                ray_sum += mu_volume[z, y, x_sheared]
+        projection[z, x] = ray_sum * spacing[1]
+```
+
+#### Why It Failed:
+- O(n³) complexity with nested loops
+- Processing 512×512×401 voxels took >2 minutes
+- Not practical for clinical use
+
+### Stereo Version 3: Horizontal Shift
+**Script**: `drr_stereo_v3.py`  
+**Status**: ⚠️ Partial success
+
+#### Approach:
+```python
+# Simple horizontal shift for stereo effect
+def create_stereo_shift(image, shift_pixels, direction='left'):
+    shifted = np.zeros_like(image)
+    if direction == 'left':
+        # Shift image to the right (for left eye view)
+        shifted[:, shift_pixels:] = image[:, :-shift_pixels]
+    else:  # right
+        # Shift image to the left (for right eye view)
+        shifted[:, :-shift_pixels] = image[:, shift_pixels:]
+    return shifted
+```
+
+#### Results:
+![Stereo V3 NSCLC](outputs/stereo_v3/drr_LUNG1-001_AP_stereo_comparison.png)
+![Stereo V3 COVID](outputs/stereo_v3/drr_A670621_AP_stereo_comparison.png)
+
+#### Anaglyph 3D (Red-Cyan):
+![Anaglyph Example](outputs/stereo_v3/drr_LUNG1-001_AP_anaglyph.png)
+
+#### Assessment:
+- ✅ DRR quality: Excellent clinical appearance
+- ⚠️ Stereo effect: Minimal (only 10 pixel shift)
+- ⚠️ 3D information: Limited, not true geometric stereo
+- ❌ 3D reconstruction: Not suitable due to lack of depth-dependent parallax
+
+### Key Learnings from Stereo Experiments
+
+1. **Volume Rotation is Wrong**: Don't rotate the entire CT volume - it corrupts data
+2. **Ray-Casting is Necessary**: True stereo requires different ray paths, not post-processing
+3. **Performance Matters**: Full ray-casting needs GPU acceleration
+4. **Simple Shifts are Limited**: Horizontal shifts create minimal stereo effect
+
+### Recommendations for True Stereo DRR
+
+1. **Perspective Projection with Two Sources**:
+   ```python
+   # Position two X-ray sources separated by baseline
+   source_left = source_center - baseline_vector * 0.5
+   source_right = source_center + baseline_vector * 0.5
+   # Cast rays from each source through volume
+   ```
+
+2. **GPU Acceleration**:
+   - Use CUDA/OpenCL for ray-casting
+   - Libraries like TIGRE or RTK have built-in stereo support
+
+3. **Depth-Dependent Shifting**:
+   - Shift each depth layer proportionally
+   - Approximates perspective without full ray-casting
+
+## Updated Future Work
 
 ### Immediate Improvements
 1. **Add DICOM output** for PACS integration
-2. **Implement variable angles** for oblique projections
+2. **Implement true stereo DRR** with perspective projection
 3. **GPU acceleration** using CuPy or PyTorch
 4. **Batch processing** for multiple series
 
@@ -279,12 +408,14 @@ intensity = np.power(intensity, 1.0/1.2)
 2. **Scatter simulation** for more realistic images
 3. **Detector response modeling** (quantum noise, blur)
 4. **CAD markers** for nodule detection studies
+5. **True stereoscopic DRR** with configurable baseline and convergence
 
 ### Research Directions
 1. **AI enhancement** - train networks to improve DRR quality
 2. **Motion simulation** - breathing artifacts
 3. **Metal artifact reduction**
 4. **Low-dose CT reconstruction**
+5. **3D reconstruction from DRR pairs** using deep learning
 
 ## Conclusion
 

@@ -1,0 +1,38 @@
+[2025-05-23 11:05:08] === Stereo DRR Generator V2 Started ===
+[2025-05-23 11:05:08] Using sheared projection with ±3.0° angle
+[2025-05-23 11:05:08] 
+Processing dataset: NSCLC-Radiomics
+[2025-05-23 11:05:08] Loading CT volume from: data/tciaDownload/1.3.6.1.4.1.32722.99.99.298991776521342375010861296712563382046
+[2025-05-23 11:05:08] Volume loaded: 512×512×134 voxels
+[2025-05-23 11:05:08] Voxel spacing: (0.98, 0.98, 3.00) mm
+[2025-05-23 11:05:08] 
+--- Generating AP stereo pair ---
+[2025-05-23 11:05:08] Generating stereo pair for AP view
+[2025-05-23 11:05:08] Volume shape (Z,Y,X): (134, 512, 512)
+[2025-05-23 11:05:08] HU range: [-1024, 3034]
+[2025-05-23 11:05:08] Generating AP projection with shear angle -3.0°
+[2025-05-23 11:05:31] Path integral range: [0.0, 5.6]
+[2025-05-23 11:05:31] Generating AP projection with shear angle 0.0°
+[2025-05-23 11:05:54] Path integral range: [0.0, 5.8]
+[2025-05-23 11:05:54] Generating AP projection with shear angle 3.0°
+[2025-05-23 11:06:16] Path integral range: [0.0, 5.9]
+[2025-05-23 11:06:16] ✅ AP left appears valid (unique values: 54805)
+[2025-05-23 11:06:16] ✅ AP center appears valid (unique values: 54678)
+[2025-05-23 11:06:16] ✅ AP right appears valid (unique values: 55079)
+[2025-05-23 11:06:16] Saved left eye: outputs/stereo_v2/drr_LUNG1-001_AP_left.png
+[2025-05-23 11:06:16] Saved center eye: outputs/stereo_v2/drr_LUNG1-001_AP_center.png
+[2025-05-23 11:06:17] Saved right eye: outputs/stereo_v2/drr_LUNG1-001_AP_right.png
+[2025-05-23 11:06:17] Saved comparison: outputs/stereo_v2/drr_LUNG1-001_AP_stereo_comparison.png
+[2025-05-23 11:06:17] Creating anaglyph 3D image
+[2025-05-23 11:06:17] Saved anaglyph: outputs/stereo_v2/drr_LUNG1-001_AP_anaglyph.png
+[2025-05-23 11:06:17] ✅ AP stereo pair generated successfully
+[2025-05-23 11:06:17] 
+--- Generating Lateral stereo pair ---
+[2025-05-23 11:06:17] Generating stereo pair for Lateral view
+[2025-05-23 11:06:17] Volume shape (Z,Y,X): (134, 512, 512)
+[2025-05-23 11:06:17] HU range: [-1024, 3034]
+[2025-05-23 11:06:17] Generating Lateral projection with shear angle -3.0°
+[2025-05-23 11:06:40] Path integral range: [0.0, 8.2]
+[2025-05-23 11:06:40] Generating Lateral projection with shear angle 0.0°
+[2025-05-23 11:07:01] Path integral range: [0.0, 8.2]
+[2025-05-23 11:07:01] Generating Lateral projection with shear angle 3.0°
