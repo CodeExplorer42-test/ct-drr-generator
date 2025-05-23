@@ -1,0 +1,368 @@
+[2025-05-23 20:09:25] === Enhanced Stereo DRR Generator V5 Started ===
+[2025-05-23 20:09:25] Enhanced parameters:
+[2025-05-23 20:09:25]   • Resolution: 1200 DPI
+[2025-05-23 20:09:25]   • Pixel spacing: 0.2 mm
+[2025-05-23 20:09:25]   • Stereo shift: 30 pixels
+[2025-05-23 20:09:25]   • Angular separation: 2.0°
+[2025-05-23 20:09:25]   • Output format: PNG + TIFF with metadata
+[2025-05-23 20:09:25] 
+Processing enhanced dataset: NSCLC-Radiomics
+[2025-05-23 20:09:26] Loaded 134 DICOM files
+[2025-05-23 20:09:26] 
+--- Enhanced Stereo Pair Generation for AP view ---
+[2025-05-23 20:09:26] Enhanced DRR generation - AP view, stereo angle: -1.0°
+[2025-05-23 20:09:26] Volume shape (Z,Y,X): (134, 512, 512)
+[2025-05-23 20:09:26] Spacing (X,Y,Z): [0.9765625 0.9765625 3.       ] mm
+[2025-05-23 20:09:26] HU range: [-1024, 3034]
+[2025-05-23 20:09:26] Enhanced attenuation range: [0.00000, 0.20111] mm^-1
+[2025-05-23 20:09:26] Applying stereo angle transformation: -1.0°
+[2025-05-23 20:09:26] Enhanced path integral range: [0.0, 10.3]
+[2025-05-23 20:09:26] Projection physical size: 500.0 x 402.0 mm
+[2025-05-23 20:09:27] Enhanced detector: 360 x 432 mm
+[2025-05-23 20:09:27] Final resolution: 1800 x 2160 pixels (0.2mm spacing)
+[2025-05-23 20:09:27] Anatomy size: 1620 x 1302 pixels
+[2025-05-23 20:09:27] Enhanced intensity range: [0.000, 1.000]
+[2025-05-23 20:09:27] Unique intensity values: 1542890
+[2025-05-23 20:09:27] Enhanced DRR generation - AP view, stereo angle: 0.0°
+[2025-05-23 20:09:27] Volume shape (Z,Y,X): (134, 512, 512)
+[2025-05-23 20:09:27] Spacing (X,Y,Z): [0.9765625 0.9765625 3.       ] mm
+[2025-05-23 20:09:27] HU range: [-1024, 3034]
+[2025-05-23 20:09:28] Enhanced attenuation range: [0.00000, 0.20111] mm^-1
+[2025-05-23 20:09:28] Enhanced path integral range: [0.0, 10.3]
+[2025-05-23 20:09:28] Projection physical size: 500.0 x 402.0 mm
+[2025-05-23 20:09:28] Enhanced detector: 360 x 432 mm
+[2025-05-23 20:09:28] Final resolution: 1800 x 2160 pixels (0.2mm spacing)
+[2025-05-23 20:09:28] Anatomy size: 1620 x 1302 pixels
+[2025-05-23 20:09:28] Enhanced intensity range: [0.000, 1.000]
+[2025-05-23 20:09:28] Unique intensity values: 1542890
+[2025-05-23 20:09:28] Enhanced DRR generation - AP view, stereo angle: 1.0°
+[2025-05-23 20:09:28] Volume shape (Z,Y,X): (134, 512, 512)
+[2025-05-23 20:09:28] Spacing (X,Y,Z): [0.9765625 0.9765625 3.       ] mm
+[2025-05-23 20:09:28] HU range: [-1024, 3034]
+[2025-05-23 20:09:29] Enhanced attenuation range: [0.00000, 0.20111] mm^-1
+[2025-05-23 20:09:29] Applying stereo angle transformation: 1.0°
+[2025-05-23 20:09:29] Enhanced path integral range: [0.0, 10.3]
+[2025-05-23 20:09:29] Projection physical size: 500.0 x 402.0 mm
+[2025-05-23 20:09:29] Enhanced detector: 360 x 432 mm
+[2025-05-23 20:09:29] Final resolution: 1800 x 2160 pixels (0.2mm spacing)
+[2025-05-23 20:09:29] Anatomy size: 1620 x 1302 pixels
+[2025-05-23 20:09:29] Enhanced intensity range: [0.000, 1.000]
+[2025-05-23 20:09:29] Unique intensity values: 1542890
+[2025-05-23 20:09:29] ✅ Enhanced stereo pair generated: 30 pixel shift, 2.0° angular separation
+[2025-05-23 20:09:30] Warning: tifffile not available, skipping TIFF export
+[2025-05-23 20:09:31] Warning: tifffile not available, skipping TIFF export
+[2025-05-23 20:09:32] Warning: tifffile not available, skipping TIFF export
+[2025-05-23 20:09:32] Saved enhanced individual images for AP at 1200 DPI
+[2025-05-23 20:10:01] Saved enhanced anaglyph: outputs/stereo_v5_enhanced/enhanced_anaglyph_LUNG1-001_AP.png
+[2025-05-23 20:10:01] Enhanced image quality - Resolution: (2160, 1800), Dynamic range: [0.000, 1.000], Unique values: 1542890
+[2025-05-23 20:10:01] 
+--- Enhanced Stereo Pair Generation for Lateral view ---
+[2025-05-23 20:10:02] Enhanced DRR generation - Lateral view, stereo angle: -1.0°
+[2025-05-23 20:10:02] Volume shape (Z,Y,X): (134, 512, 512)
+[2025-05-23 20:10:02] Spacing (X,Y,Z): [0.9765625 0.9765625 3.       ] mm
+[2025-05-23 20:10:02] HU range: [-1024, 3034]
+[2025-05-23 20:10:02] Enhanced attenuation range: [0.00000, 0.20111] mm^-1
+[2025-05-23 20:10:02] Applying stereo angle transformation: -1.0°
+[2025-05-23 20:10:02] Enhanced path integral range: [0.0, 13.8]
+[2025-05-23 20:10:02] Projection physical size: 500.0 x 402.0 mm
+[2025-05-23 20:10:03] Enhanced detector: 432 x 360 mm
+[2025-05-23 20:10:03] Final resolution: 2160 x 1800 pixels (0.2mm spacing)
+[2025-05-23 20:10:03] Anatomy size: 1943 x 1562 pixels
+[2025-05-23 20:10:03] Enhanced intensity range: [0.000, 1.000]
+[2025-05-23 20:10:03] Unique intensity values: 1976689
+[2025-05-23 20:10:03] Enhanced DRR generation - Lateral view, stereo angle: 0.0°
+[2025-05-23 20:10:03] Volume shape (Z,Y,X): (134, 512, 512)
+[2025-05-23 20:10:03] Spacing (X,Y,Z): [0.9765625 0.9765625 3.       ] mm
+[2025-05-23 20:10:03] HU range: [-1024, 3034]
+[2025-05-23 20:10:04] Enhanced attenuation range: [0.00000, 0.20111] mm^-1
+[2025-05-23 20:10:04] Enhanced path integral range: [0.0, 13.8]
+[2025-05-23 20:10:04] Projection physical size: 500.0 x 402.0 mm
+[2025-05-23 20:10:04] Enhanced detector: 432 x 360 mm
+[2025-05-23 20:10:04] Final resolution: 2160 x 1800 pixels (0.2mm spacing)
+[2025-05-23 20:10:04] Anatomy size: 1943 x 1562 pixels
+[2025-05-23 20:10:04] Enhanced intensity range: [0.000, 1.000]
+[2025-05-23 20:10:04] Unique intensity values: 1976689
+[2025-05-23 20:10:04] Enhanced DRR generation - Lateral view, stereo angle: 1.0°
+[2025-05-23 20:10:04] Volume shape (Z,Y,X): (134, 512, 512)
+[2025-05-23 20:10:04] Spacing (X,Y,Z): [0.9765625 0.9765625 3.       ] mm
+[2025-05-23 20:10:04] HU range: [-1024, 3034]
+[2025-05-23 20:10:05] Enhanced attenuation range: [0.00000, 0.20111] mm^-1
+[2025-05-23 20:10:05] Applying stereo angle transformation: 1.0°
+[2025-05-23 20:10:05] Enhanced path integral range: [0.0, 13.8]
+[2025-05-23 20:10:05] Projection physical size: 500.0 x 402.0 mm
+[2025-05-23 20:10:05] Enhanced detector: 432 x 360 mm
+[2025-05-23 20:10:05] Final resolution: 2160 x 1800 pixels (0.2mm spacing)
+[2025-05-23 20:10:05] Anatomy size: 1943 x 1562 pixels
+[2025-05-23 20:10:05] Enhanced intensity range: [0.000, 1.000]
+[2025-05-23 20:10:05] Unique intensity values: 1976689
+[2025-05-23 20:10:05] ✅ Enhanced stereo pair generated: 30 pixel shift, 2.0° angular separation
+[2025-05-23 20:10:06] Warning: tifffile not available, skipping TIFF export
+[2025-05-23 20:10:06] Warning: tifffile not available, skipping TIFF export
+[2025-05-23 20:10:07] Warning: tifffile not available, skipping TIFF export
+[2025-05-23 20:10:07] Saved enhanced individual images for Lateral at 1200 DPI
+[2025-05-23 20:10:31] Saved enhanced anaglyph: outputs/stereo_v5_enhanced/enhanced_anaglyph_LUNG1-001_Lateral.png
+[2025-05-23 20:10:31] Enhanced image quality - Resolution: (1800, 2160), Dynamic range: [0.000, 1.000], Unique values: 1976689
+[2025-05-23 20:10:31] 
+Processing enhanced dataset: COVID-19-NY-SBU
+[2025-05-23 20:10:32] Loaded 401 DICOM files
+[2025-05-23 20:10:32] 
+--- Enhanced Stereo Pair Generation for AP view ---
+[2025-05-23 20:10:32] Enhanced DRR generation - AP view, stereo angle: -1.0°
+[2025-05-23 20:10:32] Volume shape (Z,Y,X): (401, 512, 512)
+[2025-05-23 20:10:32] Spacing (X,Y,Z): [0.653 0.653 1.   ] mm
+[2025-05-23 20:10:32] HU range: [-13297, 32767]
+[2025-05-23 20:10:35] Enhanced attenuation range: [0.00000, 1.61343] mm^-1
+[2025-05-23 20:10:35] Applying stereo angle transformation: -1.0°
+[2025-05-23 20:10:35] Enhanced path integral range: [0.0, 14.9]
+[2025-05-23 20:10:35] Projection physical size: 334.3 x 401.0 mm
+[2025-05-23 20:10:35] Enhanced detector: 360 x 432 mm
+[2025-05-23 20:10:35] Final resolution: 1800 x 2160 pixels (0.2mm spacing)
+[2025-05-23 20:10:35] Anatomy size: 1620 x 1943 pixels
+[2025-05-23 20:10:35] Enhanced intensity range: [0.000, 1.000]
+[2025-05-23 20:10:35] Unique intensity values: 3046141
+[2025-05-23 20:10:35] Enhanced DRR generation - AP view, stereo angle: 0.0°
+[2025-05-23 20:10:35] Volume shape (Z,Y,X): (401, 512, 512)
+[2025-05-23 20:10:35] Spacing (X,Y,Z): [0.653 0.653 1.   ] mm
+[2025-05-23 20:10:35] HU range: [-13297, 32767]
+[2025-05-23 20:10:38] Enhanced attenuation range: [0.00000, 1.61343] mm^-1
+[2025-05-23 20:10:38] Enhanced path integral range: [0.0, 14.9]
+[2025-05-23 20:10:38] Projection physical size: 334.3 x 401.0 mm
+[2025-05-23 20:10:38] Enhanced detector: 360 x 432 mm
+[2025-05-23 20:10:38] Final resolution: 1800 x 2160 pixels (0.2mm spacing)
+[2025-05-23 20:10:38] Anatomy size: 1620 x 1943 pixels
+[2025-05-23 20:10:38] Enhanced intensity range: [0.000, 1.000]
+[2025-05-23 20:10:38] Unique intensity values: 3046141
+[2025-05-23 20:10:39] Enhanced DRR generation - AP view, stereo angle: 1.0°
+[2025-05-23 20:10:39] Volume shape (Z,Y,X): (401, 512, 512)
+[2025-05-23 20:10:39] Spacing (X,Y,Z): [0.653 0.653 1.   ] mm
+[2025-05-23 20:10:39] HU range: [-13297, 32767]
+[2025-05-23 20:10:41] Enhanced attenuation range: [0.00000, 1.61343] mm^-1
+[2025-05-23 20:10:41] Applying stereo angle transformation: 1.0°
+[2025-05-23 20:10:41] Enhanced path integral range: [0.0, 14.9]
+[2025-05-23 20:10:41] Projection physical size: 334.3 x 401.0 mm
+[2025-05-23 20:10:41] Enhanced detector: 360 x 432 mm
+[2025-05-23 20:10:41] Final resolution: 1800 x 2160 pixels (0.2mm spacing)
+[2025-05-23 20:10:41] Anatomy size: 1620 x 1943 pixels
+[2025-05-23 20:10:42] Enhanced intensity range: [0.000, 1.000]
+[2025-05-23 20:10:42] Unique intensity values: 3046141
+[2025-05-23 20:10:42] ✅ Enhanced stereo pair generated: 30 pixel shift, 2.0° angular separation
+[2025-05-23 20:10:43] Warning: tifffile not available, skipping TIFF export
+[2025-05-23 20:10:43] Warning: tifffile not available, skipping TIFF export
+[2025-05-23 20:10:44] Warning: tifffile not available, skipping TIFF export
+[2025-05-23 20:10:44] Saved enhanced individual images for AP at 1200 DPI
+[2025-05-23 20:20:44] === Enhanced Stereo DRR Generator V5 Started ===
+[2025-05-23 20:20:44] Enhanced parameters:
+[2025-05-23 20:20:44]   • Resolution: 1200 DPI
+[2025-05-23 20:20:44]   • Pixel spacing: 0.2 mm
+[2025-05-23 20:20:44]   • Stereo shift: 30 pixels
+[2025-05-23 20:20:44]   • Angular separation: 2.0°
+[2025-05-23 20:20:44]   • Output format: PNG + TIFF with metadata
+[2025-05-23 20:20:44] 
+Processing enhanced dataset: NSCLC-Radiomics
+[2025-05-23 20:20:45] Loaded 134 DICOM files
+[2025-05-23 20:20:45] 
+--- Enhanced Stereo Pair Generation for AP view ---
+[2025-05-23 20:20:45] Enhanced DRR generation - AP view, stereo angle: -1.0°
+[2025-05-23 20:20:45] Volume shape (Z,Y,X): (134, 512, 512)
+[2025-05-23 20:20:45] Spacing (X,Y,Z): [0.9765625 0.9765625 3.       ] mm
+[2025-05-23 20:20:45] HU range: [-1024, 3034]
+[2025-05-23 20:20:45] Enhanced attenuation range: [0.00000, 0.20111] mm^-1
+[2025-05-23 20:20:45] Applying stereo angle transformation: -1.0°
+[2025-05-23 20:20:45] Enhanced path integral range: [0.0, 10.3]
+[2025-05-23 20:20:45] Projection physical size: 500.0 x 402.0 mm
+[2025-05-23 20:20:45] Enhanced detector: 360 x 432 mm
+[2025-05-23 20:20:45] Final resolution: 1800 x 2160 pixels (0.2mm spacing)
+[2025-05-23 20:20:45] Anatomy size: 1620 x 1302 pixels
+[2025-05-23 20:20:45] Enhanced intensity range: [0.000, 1.000]
+[2025-05-23 20:20:46] Unique intensity values: 1542890
+[2025-05-23 20:20:46] Enhanced DRR generation - AP view, stereo angle: 0.0°
+[2025-05-23 20:20:46] Volume shape (Z,Y,X): (134, 512, 512)
+[2025-05-23 20:20:46] Spacing (X,Y,Z): [0.9765625 0.9765625 3.       ] mm
+[2025-05-23 20:20:46] HU range: [-1024, 3034]
+[2025-05-23 20:20:46] Enhanced attenuation range: [0.00000, 0.20111] mm^-1
+[2025-05-23 20:20:46] Enhanced path integral range: [0.0, 10.3]
+[2025-05-23 20:20:46] Projection physical size: 500.0 x 402.0 mm
+[2025-05-23 20:20:46] Enhanced detector: 360 x 432 mm
+[2025-05-23 20:20:46] Final resolution: 1800 x 2160 pixels (0.2mm spacing)
+[2025-05-23 20:20:46] Anatomy size: 1620 x 1302 pixels
+[2025-05-23 20:20:46] Enhanced intensity range: [0.000, 1.000]
+[2025-05-23 20:20:47] Unique intensity values: 1542890
+[2025-05-23 20:20:47] Enhanced DRR generation - AP view, stereo angle: 1.0°
+[2025-05-23 20:20:47] Volume shape (Z,Y,X): (134, 512, 512)
+[2025-05-23 20:20:47] Spacing (X,Y,Z): [0.9765625 0.9765625 3.       ] mm
+[2025-05-23 20:20:47] HU range: [-1024, 3034]
+[2025-05-23 20:20:47] Enhanced attenuation range: [0.00000, 0.20111] mm^-1
+[2025-05-23 20:20:47] Applying stereo angle transformation: 1.0°
+[2025-05-23 20:20:47] Enhanced path integral range: [0.0, 10.3]
+[2025-05-23 20:20:47] Projection physical size: 500.0 x 402.0 mm
+[2025-05-23 20:20:47] Enhanced detector: 360 x 432 mm
+[2025-05-23 20:20:47] Final resolution: 1800 x 2160 pixels (0.2mm spacing)
+[2025-05-23 20:20:47] Anatomy size: 1620 x 1302 pixels
+[2025-05-23 20:20:48] Enhanced intensity range: [0.000, 1.000]
+[2025-05-23 20:20:48] Unique intensity values: 1542890
+[2025-05-23 20:20:48] ✅ Enhanced stereo pair generated: 30 pixel shift, 2.0° angular separation
+[2025-05-23 20:20:48] Saved reconstruction TIFF: outputs/stereo_v5_enhanced/drr_LUNG1-001_AP_left.tiff
+[2025-05-23 20:20:49] Saved reconstruction TIFF: outputs/stereo_v5_enhanced/drr_LUNG1-001_AP_center.tiff
+[2025-05-23 20:20:49] Saved reconstruction TIFF: outputs/stereo_v5_enhanced/drr_LUNG1-001_AP_right.tiff
+[2025-05-23 20:20:49] Saved enhanced individual images for AP at 1200 DPI
+[2025-05-23 20:21:08] Saved enhanced anaglyph: outputs/stereo_v5_enhanced/enhanced_anaglyph_LUNG1-001_AP.png
+[2025-05-23 20:21:09] Enhanced image quality - Resolution: (2160, 1800), Dynamic range: [0.000, 1.000], Unique values: 1542890
+[2025-05-23 20:21:09] 
+--- Enhanced Stereo Pair Generation for Lateral view ---
+[2025-05-23 20:21:09] Enhanced DRR generation - Lateral view, stereo angle: -1.0°
+[2025-05-23 20:21:09] Volume shape (Z,Y,X): (134, 512, 512)
+[2025-05-23 20:21:09] Spacing (X,Y,Z): [0.9765625 0.9765625 3.       ] mm
+[2025-05-23 20:21:09] HU range: [-1024, 3034]
+[2025-05-23 20:21:09] Enhanced attenuation range: [0.00000, 0.20111] mm^-1
+[2025-05-23 20:21:09] Applying stereo angle transformation: -1.0°
+[2025-05-23 20:21:09] Enhanced path integral range: [0.0, 13.8]
+[2025-05-23 20:21:09] Projection physical size: 500.0 x 402.0 mm
+[2025-05-23 20:21:10] Enhanced detector: 432 x 360 mm
+[2025-05-23 20:21:10] Final resolution: 2160 x 1800 pixels (0.2mm spacing)
+[2025-05-23 20:21:10] Anatomy size: 1943 x 1562 pixels
+[2025-05-23 20:21:10] Enhanced intensity range: [0.000, 1.000]
+[2025-05-23 20:21:10] Unique intensity values: 1976689
+[2025-05-23 20:21:10] Enhanced DRR generation - Lateral view, stereo angle: 0.0°
+[2025-05-23 20:21:10] Volume shape (Z,Y,X): (134, 512, 512)
+[2025-05-23 20:21:10] Spacing (X,Y,Z): [0.9765625 0.9765625 3.       ] mm
+[2025-05-23 20:21:10] HU range: [-1024, 3034]
+[2025-05-23 20:21:11] Enhanced attenuation range: [0.00000, 0.20111] mm^-1
+[2025-05-23 20:21:11] Enhanced path integral range: [0.0, 13.8]
+[2025-05-23 20:21:11] Projection physical size: 500.0 x 402.0 mm
+[2025-05-23 20:21:11] Enhanced detector: 432 x 360 mm
+[2025-05-23 20:21:11] Final resolution: 2160 x 1800 pixels (0.2mm spacing)
+[2025-05-23 20:21:11] Anatomy size: 1943 x 1562 pixels
+[2025-05-23 20:21:11] Enhanced intensity range: [0.000, 1.000]
+[2025-05-23 20:21:11] Unique intensity values: 1976689
+[2025-05-23 20:21:11] Enhanced DRR generation - Lateral view, stereo angle: 1.0°
+[2025-05-23 20:21:11] Volume shape (Z,Y,X): (134, 512, 512)
+[2025-05-23 20:21:11] Spacing (X,Y,Z): [0.9765625 0.9765625 3.       ] mm
+[2025-05-23 20:21:11] HU range: [-1024, 3034]
+[2025-05-23 20:21:12] Enhanced attenuation range: [0.00000, 0.20111] mm^-1
+[2025-05-23 20:21:12] Applying stereo angle transformation: 1.0°
+[2025-05-23 20:21:12] Enhanced path integral range: [0.0, 13.8]
+[2025-05-23 20:21:12] Projection physical size: 500.0 x 402.0 mm
+[2025-05-23 20:21:12] Enhanced detector: 432 x 360 mm
+[2025-05-23 20:21:12] Final resolution: 2160 x 1800 pixels (0.2mm spacing)
+[2025-05-23 20:21:12] Anatomy size: 1943 x 1562 pixels
+[2025-05-23 20:21:12] Enhanced intensity range: [0.000, 1.000]
+[2025-05-23 20:21:12] Unique intensity values: 1976689
+[2025-05-23 20:21:12] ✅ Enhanced stereo pair generated: 30 pixel shift, 2.0° angular separation
+[2025-05-23 20:21:12] Saved reconstruction TIFF: outputs/stereo_v5_enhanced/drr_LUNG1-001_Lateral_left.tiff
+[2025-05-23 20:21:13] Saved reconstruction TIFF: outputs/stereo_v5_enhanced/drr_LUNG1-001_Lateral_center.tiff
+[2025-05-23 20:21:13] Saved reconstruction TIFF: outputs/stereo_v5_enhanced/drr_LUNG1-001_Lateral_right.tiff
+[2025-05-23 20:21:13] Saved enhanced individual images for Lateral at 1200 DPI
+[2025-05-23 20:21:33] Saved enhanced anaglyph: outputs/stereo_v5_enhanced/enhanced_anaglyph_LUNG1-001_Lateral.png
+[2025-05-23 20:21:33] Enhanced image quality - Resolution: (1800, 2160), Dynamic range: [0.000, 1.000], Unique values: 1976689
+[2025-05-23 20:21:33] 
+Processing enhanced dataset: COVID-19-NY-SBU
+[2025-05-23 20:21:34] Loaded 401 DICOM files
+[2025-05-23 20:21:34] 
+--- Enhanced Stereo Pair Generation for AP view ---
+[2025-05-23 20:21:34] Enhanced DRR generation - AP view, stereo angle: -1.0°
+[2025-05-23 20:21:34] Volume shape (Z,Y,X): (401, 512, 512)
+[2025-05-23 20:21:34] Spacing (X,Y,Z): [0.653 0.653 1.   ] mm
+[2025-05-23 20:21:34] HU range: [-13297, 32767]
+[2025-05-23 20:21:37] Enhanced attenuation range: [0.00000, 1.61343] mm^-1
+[2025-05-23 20:21:37] Applying stereo angle transformation: -1.0°
+[2025-05-23 20:21:37] Enhanced path integral range: [0.0, 14.9]
+[2025-05-23 20:21:37] Projection physical size: 334.3 x 401.0 mm
+[2025-05-23 20:21:37] Enhanced detector: 360 x 432 mm
+[2025-05-23 20:21:37] Final resolution: 1800 x 2160 pixels (0.2mm spacing)
+[2025-05-23 20:21:37] Anatomy size: 1620 x 1943 pixels
+[2025-05-23 20:21:37] Enhanced intensity range: [0.000, 1.000]
+[2025-05-23 20:21:37] Unique intensity values: 3046141
+[2025-05-23 20:21:37] Enhanced DRR generation - AP view, stereo angle: 0.0°
+[2025-05-23 20:21:37] Volume shape (Z,Y,X): (401, 512, 512)
+[2025-05-23 20:21:37] Spacing (X,Y,Z): [0.653 0.653 1.   ] mm
+[2025-05-23 20:21:37] HU range: [-13297, 32767]
+[2025-05-23 20:21:39] Enhanced attenuation range: [0.00000, 1.61343] mm^-1
+[2025-05-23 20:21:40] Enhanced path integral range: [0.0, 14.9]
+[2025-05-23 20:21:40] Projection physical size: 334.3 x 401.0 mm
+[2025-05-23 20:21:40] Enhanced detector: 360 x 432 mm
+[2025-05-23 20:21:40] Final resolution: 1800 x 2160 pixels (0.2mm spacing)
+[2025-05-23 20:21:40] Anatomy size: 1620 x 1943 pixels
+[2025-05-23 20:21:40] Enhanced intensity range: [0.000, 1.000]
+[2025-05-23 20:21:40] Unique intensity values: 3046141
+[2025-05-23 20:21:40] Enhanced DRR generation - AP view, stereo angle: 1.0°
+[2025-05-23 20:21:40] Volume shape (Z,Y,X): (401, 512, 512)
+[2025-05-23 20:21:40] Spacing (X,Y,Z): [0.653 0.653 1.   ] mm
+[2025-05-23 20:21:40] HU range: [-13297, 32767]
+[2025-05-23 20:21:42] Enhanced attenuation range: [0.00000, 1.61343] mm^-1
+[2025-05-23 20:21:42] Applying stereo angle transformation: 1.0°
+[2025-05-23 20:21:42] Enhanced path integral range: [0.0, 14.9]
+[2025-05-23 20:21:42] Projection physical size: 334.3 x 401.0 mm
+[2025-05-23 20:21:43] Enhanced detector: 360 x 432 mm
+[2025-05-23 20:21:43] Final resolution: 1800 x 2160 pixels (0.2mm spacing)
+[2025-05-23 20:21:43] Anatomy size: 1620 x 1943 pixels
+[2025-05-23 20:21:43] Enhanced intensity range: [0.000, 1.000]
+[2025-05-23 20:21:43] Unique intensity values: 3046141
+[2025-05-23 20:21:43] ✅ Enhanced stereo pair generated: 30 pixel shift, 2.0° angular separation
+[2025-05-23 20:21:43] Saved reconstruction TIFF: outputs/stereo_v5_enhanced/drr_A670621_AP_left.tiff
+[2025-05-23 20:21:44] Saved reconstruction TIFF: outputs/stereo_v5_enhanced/drr_A670621_AP_center.tiff
+[2025-05-23 20:21:45] Saved reconstruction TIFF: outputs/stereo_v5_enhanced/drr_A670621_AP_right.tiff
+[2025-05-23 20:21:45] Saved enhanced individual images for AP at 1200 DPI
+[2025-05-23 20:22:26] Saved enhanced anaglyph: outputs/stereo_v5_enhanced/enhanced_anaglyph_A670621_AP.png
+[2025-05-23 20:22:27] Enhanced image quality - Resolution: (2160, 1800), Dynamic range: [0.000, 1.000], Unique values: 3046141
+[2025-05-23 20:22:27] 
+--- Enhanced Stereo Pair Generation for Lateral view ---
+[2025-05-23 20:22:27] Enhanced DRR generation - Lateral view, stereo angle: -1.0°
+[2025-05-23 20:22:27] Volume shape (Z,Y,X): (401, 512, 512)
+[2025-05-23 20:22:27] Spacing (X,Y,Z): [0.653 0.653 1.   ] mm
+[2025-05-23 20:22:27] HU range: [-13297, 32767]
+[2025-05-23 20:22:30] Enhanced attenuation range: [0.00000, 1.61343] mm^-1
+[2025-05-23 20:22:30] Applying stereo angle transformation: -1.0°
+[2025-05-23 20:22:30] Enhanced path integral range: [0.0, 13.4]
+[2025-05-23 20:22:30] Projection physical size: 334.3 x 401.0 mm
+[2025-05-23 20:22:30] Enhanced detector: 432 x 360 mm
+[2025-05-23 20:22:30] Final resolution: 2160 x 1800 pixels (0.2mm spacing)
+[2025-05-23 20:22:30] Anatomy size: 1350 x 1620 pixels
+[2025-05-23 20:22:30] Enhanced intensity range: [0.000, 1.000]
+[2025-05-23 20:22:30] Unique intensity values: 1698892
+[2025-05-23 20:22:30] Enhanced DRR generation - Lateral view, stereo angle: 0.0°
+[2025-05-23 20:22:30] Volume shape (Z,Y,X): (401, 512, 512)
+[2025-05-23 20:22:30] Spacing (X,Y,Z): [0.653 0.653 1.   ] mm
+[2025-05-23 20:22:30] HU range: [-13297, 32767]
+[2025-05-23 20:22:32] Enhanced attenuation range: [0.00000, 1.61343] mm^-1
+[2025-05-23 20:22:32] Enhanced path integral range: [0.0, 13.4]
+[2025-05-23 20:22:32] Projection physical size: 334.3 x 401.0 mm
+[2025-05-23 20:22:33] Enhanced detector: 432 x 360 mm
+[2025-05-23 20:22:33] Final resolution: 2160 x 1800 pixels (0.2mm spacing)
+[2025-05-23 20:22:33] Anatomy size: 1350 x 1620 pixels
+[2025-05-23 20:22:33] Enhanced intensity range: [0.000, 1.000]
+[2025-05-23 20:22:33] Unique intensity values: 1698892
+[2025-05-23 20:22:33] Enhanced DRR generation - Lateral view, stereo angle: 1.0°
+[2025-05-23 20:22:33] Volume shape (Z,Y,X): (401, 512, 512)
+[2025-05-23 20:22:33] Spacing (X,Y,Z): [0.653 0.653 1.   ] mm
+[2025-05-23 20:22:33] HU range: [-13297, 32767]
+[2025-05-23 20:22:35] Enhanced attenuation range: [0.00000, 1.61343] mm^-1
+[2025-05-23 20:22:35] Applying stereo angle transformation: 1.0°
+[2025-05-23 20:22:35] Enhanced path integral range: [0.0, 13.4]
+[2025-05-23 20:22:35] Projection physical size: 334.3 x 401.0 mm
+[2025-05-23 20:22:35] Enhanced detector: 432 x 360 mm
+[2025-05-23 20:22:35] Final resolution: 2160 x 1800 pixels (0.2mm spacing)
+[2025-05-23 20:22:35] Anatomy size: 1350 x 1620 pixels
+[2025-05-23 20:22:36] Enhanced intensity range: [0.000, 1.000]
+[2025-05-23 20:22:36] Unique intensity values: 1698892
+[2025-05-23 20:22:36] ✅ Enhanced stereo pair generated: 30 pixel shift, 2.0° angular separation
+[2025-05-23 20:22:36] Saved reconstruction TIFF: outputs/stereo_v5_enhanced/drr_A670621_Lateral_left.tiff
+[2025-05-23 20:22:37] Saved reconstruction TIFF: outputs/stereo_v5_enhanced/drr_A670621_Lateral_center.tiff
+[2025-05-23 20:22:37] Saved reconstruction TIFF: outputs/stereo_v5_enhanced/drr_A670621_Lateral_right.tiff
+[2025-05-23 20:22:37] Saved enhanced individual images for Lateral at 1200 DPI
+[2025-05-23 20:22:57] Saved enhanced anaglyph: outputs/stereo_v5_enhanced/enhanced_anaglyph_A670621_Lateral.png
+[2025-05-23 20:22:57] Enhanced image quality - Resolution: (1800, 2160), Dynamic range: [0.000, 1.000], Unique values: 1698892
+[2025-05-23 20:22:57] 
+=== Enhanced Stereo DRR Generation Complete ===
+[2025-05-23 20:22:57] Success rate: 4/4 projections
+[2025-05-23 20:22:57] ✅ All enhanced stereo pairs generated successfully!
+[2025-05-23 20:22:57] 
+Output directory: outputs/stereo_v5_enhanced
+[2025-05-23 20:22:57] 
+V5 Enhanced Features:
+[2025-05-23 20:22:57]   ✓ 1200 DPI output for reconstruction algorithms
+[2025-05-23 20:22:57]   ✓ Enhanced 30 pixel stereo shift
+[2025-05-23 20:22:57]   ✓ 2.0° angular stereo separation
+[2025-05-23 20:22:57]   ✓ 0.2mm pixel spacing for fine detail
+[2025-05-23 20:22:57]   ✓ Adaptive contrast enhancement
+[2025-05-23 20:22:57]   ✓ 16-bit TIFF export with calibration metadata
+[2025-05-23 20:22:57]   ✓ Reconstruction-ready image quality

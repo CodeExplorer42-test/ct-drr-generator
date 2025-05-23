@@ -1,0 +1,18 @@
+{
+  "patient_id": "LUNG1-001",
+  "view_type": "AP",
+  "stereo_shift_mm": 6.0,
+  "detector_pixel_spacing_mm": 0.2,
+  "reconstruction_dpi": 1200,
+  "image_dimensions": [
+    2160,
+    1800
+  ],
+  "stereo_baseline_mm": 6.0,
+  "pixel_spacing_mm": 0.2,
+  "stereo_shift_pixels": 30,
+  "stereo_angle_degrees": 2.0,
+  "dpi": 1200,
+  "generation_timestamp": "2025-05-23T20:20:49.568383",
+  "description": "Enhanced Stereo DRR for 3D Reconstruction"
+}

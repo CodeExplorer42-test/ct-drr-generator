@@ -89,3 +89,94 @@ Key improvements in V4:
 [2025-05-23 12:20:52]   ✓ Professional film-like borders and centering
 [2025-05-23 12:20:52]   ✓ Percentile-based normalization for better contrast
 [2025-05-23 12:20:52]   ✓ Clinical quality processing pipeline
+[2025-05-23 20:00:17] === Clinical Quality Stereo DRR Generator V4 Started ===
+[2025-05-23 20:00:17] Using clinical_final.py quality parameters with 10 pixel stereo shift
+[2025-05-23 20:00:17] Key improvements: Standard film dimensions, 2.5x bone enhancement, no windowing
+[2025-05-23 20:00:17] 
+Processing dataset: NSCLC-Radiomics
+[2025-05-23 20:00:17] Loaded 134 DICOM files
+[2025-05-23 20:00:17] 
+--- Generating clinical quality stereo pair for AP view ---
+[2025-05-23 20:00:17] Volume shape (Z,Y,X): (134, 512, 512)
+[2025-05-23 20:00:17] Spacing (X,Y,Z): [0.9765625 0.9765625 3.       ] mm
+[2025-05-23 20:00:17] HU range: [-1024, 3034]
+[2025-05-23 20:00:18] Attenuation range: [0.00000, 0.16279] mm^-1
+[2025-05-23 20:00:18] Path integral range: [0.0, 8.8]
+[2025-05-23 20:00:18] Projection physical size: 500.0 x 402.0 mm
+[2025-05-23 20:00:18] Detector size: 356 x 432 mm
+[2025-05-23 20:00:18] Final image: 712 x 864 pixels
+[2025-05-23 20:00:18] Anatomy size: 640 x 515 pixels
+[2025-05-23 20:00:18] Final intensity range: [0.000, 1.000]
+[2025-05-23 20:00:18] ✅ Generated clinical quality stereo pair with 10 pixel shift
+[2025-05-23 20:00:25] Saved clinical quality individual images for AP
+[2025-05-23 20:00:27] Saved comparison: outputs/stereo_v4_clinical/drr_LUNG1-001_AP_stereo_comparison.png
+[2025-05-23 20:00:27] Saved anaglyph: outputs/stereo_v4_clinical/drr_LUNG1-001_AP_anaglyph.png
+[2025-05-23 20:00:27] Image quality - Min: 0.000, Max: 1.000, Unique values: 234682
+[2025-05-23 20:00:27] 
+--- Generating clinical quality stereo pair for Lateral view ---
+[2025-05-23 20:00:27] Volume shape (Z,Y,X): (134, 512, 512)
+[2025-05-23 20:00:27] Spacing (X,Y,Z): [0.9765625 0.9765625 3.       ] mm
+[2025-05-23 20:00:27] HU range: [-1024, 3034]
+[2025-05-23 20:00:28] Attenuation range: [0.00000, 0.16279] mm^-1
+[2025-05-23 20:00:28] Path integral range: [0.0, 11.3]
+[2025-05-23 20:00:28] Projection physical size: 500.0 x 402.0 mm
+[2025-05-23 20:00:28] Detector size: 432 x 356 mm
+[2025-05-23 20:00:28] Final image: 864 x 712 pixels
+[2025-05-23 20:00:28] Anatomy size: 777 x 625 pixels
+[2025-05-23 20:00:28] Final intensity range: [0.000, 1.000]
+[2025-05-23 20:00:28] ✅ Generated clinical quality stereo pair with 10 pixel shift
+[2025-05-23 20:00:35] Saved clinical quality individual images for Lateral
+[2025-05-23 20:00:37] Saved comparison: outputs/stereo_v4_clinical/drr_LUNG1-001_Lateral_stereo_comparison.png
+[2025-05-23 20:00:37] Saved anaglyph: outputs/stereo_v4_clinical/drr_LUNG1-001_Lateral_anaglyph.png
+[2025-05-23 20:00:37] Image quality - Min: 0.000, Max: 1.000, Unique values: 291697
+[2025-05-23 20:00:37] 
+Processing dataset: COVID-19-NY-SBU
+[2025-05-23 20:00:38] Loaded 401 DICOM files
+[2025-05-23 20:00:38] 
+--- Generating clinical quality stereo pair for AP view ---
+[2025-05-23 20:00:38] Volume shape (Z,Y,X): (401, 512, 512)
+[2025-05-23 20:00:39] Spacing (X,Y,Z): [0.653 0.653 1.   ] mm
+[2025-05-23 20:00:39] HU range: [-13297, 32767]
+[2025-05-23 20:00:47] Attenuation range: [0.00000, 1.29264] mm^-1
+[2025-05-23 20:00:47] Path integral range: [0.0, 12.3]
+[2025-05-23 20:00:47] Projection physical size: 334.3 x 401.0 mm
+[2025-05-23 20:00:47] Detector size: 356 x 432 mm
+[2025-05-23 20:00:47] Final image: 712 x 864 pixels
+[2025-05-23 20:00:47] Anatomy size: 640 x 768 pixels
+[2025-05-23 20:00:47] Final intensity range: [0.000, 1.000]
+[2025-05-23 20:00:47] ✅ Generated clinical quality stereo pair with 10 pixel shift
+[2025-05-23 20:01:18] Saved clinical quality individual images for AP
+[2025-05-23 20:01:22] Saved comparison: outputs/stereo_v4_clinical/drr_A670621_AP_stereo_comparison.png
+[2025-05-23 20:01:24] Saved anaglyph: outputs/stereo_v4_clinical/drr_A670621_AP_anaglyph.png
+[2025-05-23 20:01:24] Image quality - Min: 0.000, Max: 1.000, Unique values: 470023
+[2025-05-23 20:01:24] 
+--- Generating clinical quality stereo pair for Lateral view ---
+[2025-05-23 20:01:24] Volume shape (Z,Y,X): (401, 512, 512)
+[2025-05-23 20:01:24] Spacing (X,Y,Z): [0.653 0.653 1.   ] mm
+[2025-05-23 20:01:24] HU range: [-13297, 32767]
+[2025-05-23 20:01:31] Attenuation range: [0.00000, 1.29264] mm^-1
+[2025-05-23 20:01:31] Path integral range: [0.0, 11.2]
+[2025-05-23 20:01:31] Projection physical size: 334.3 x 401.0 mm
+[2025-05-23 20:01:31] Detector size: 432 x 356 mm
+[2025-05-23 20:01:31] Final image: 864 x 712 pixels
+[2025-05-23 20:01:31] Anatomy size: 534 x 640 pixels
+[2025-05-23 20:01:31] Final intensity range: [0.000, 1.000]
+[2025-05-23 20:01:31] ✅ Generated clinical quality stereo pair with 10 pixel shift
+[2025-05-23 20:01:47] Saved clinical quality individual images for Lateral
+[2025-05-23 20:01:50] Saved comparison: outputs/stereo_v4_clinical/drr_A670621_Lateral_stereo_comparison.png
+[2025-05-23 20:01:52] Saved anaglyph: outputs/stereo_v4_clinical/drr_A670621_Lateral_anaglyph.png
+[2025-05-23 20:01:52] Image quality - Min: 0.000, Max: 1.000, Unique values: 249238
+[2025-05-23 20:01:52] 
+=== Clinical Quality Stereo DRR Generation Complete ===
+[2025-05-23 20:01:52] Success rate: 4/4 projections
+[2025-05-23 20:01:52] ✅ All clinical quality stereo pairs generated successfully!
+[2025-05-23 20:01:52] 
+Output directory: outputs/stereo_v4_clinical
+[2025-05-23 20:01:52] 
+Key improvements in V4:
+[2025-05-23 20:01:52]   ✓ Standard X-ray film dimensions (14"x17" AP, 17"x14" Lateral)
+[2025-05-23 20:01:52]   ✓ Enhanced bone visibility (2.5x attenuation multiplier)
+[2025-05-23 20:01:52]   ✓ No clinical windowing (preserves full HU range)
+[2025-05-23 20:01:52]   ✓ Professional film-like borders and centering
+[2025-05-23 20:01:52]   ✓ Percentile-based normalization for better contrast
+[2025-05-23 20:01:52]   ✓ Clinical quality processing pipeline
