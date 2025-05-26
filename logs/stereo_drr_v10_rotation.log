@@ -1,0 +1,60 @@
+[2025-05-26 23:29:30] ================================================================================
+[2025-05-26 23:29:30] V10 ROTATION Stereo DRR Generator - HONEST APPROACH
+[2025-05-26 23:29:30] ================================================================================
+[2025-05-26 23:29:30] Conservative strategy:
+[2025-05-26 23:29:30]   • Small volume rotation: ±1.5° (avoid distortion)
+[2025-05-26 23:29:30]   • Standard parallel projections (no tricks)
+[2025-05-26 23:29:30]   • HONEST assessment of results
+[2025-05-26 23:29:30]   • No claims of success without visual verification
+[2025-05-26 23:29:30] ================================================================================
+[2025-05-26 23:29:30] Loading 134 DICOM files...
+[2025-05-26 23:29:30] 
+--- V10 ROTATION Stereo: AP view ---
+[2025-05-26 23:29:30] CONSERVATIVE approach: Small volume rotations for true geometric stereo
+[2025-05-26 23:29:30] Rotation angle: ±1.5° (very small to avoid distortion)
+[2025-05-26 23:29:30] Volume: (134, 512, 512), spacing: [0.9765625 0.9765625 3.       ] mm
+[2025-05-26 23:29:30] Conservative attenuation: [0.00000, 0.16279] mm^-1
+[2025-05-26 23:29:30] Generating CENTER view (no rotation)...
+[2025-05-26 23:29:30] Generating standard AP projection
+[2025-05-26 23:29:30] Projection range: [-0.025, 9.107]
+[2025-05-26 23:29:30] Generating LEFT view (small negative rotation)...
+[2025-05-26 23:29:30] Rotating volume by -1.5° around z axis
+[2025-05-26 23:29:34] Original volume range: [-1024, 3034] HU
+[2025-05-26 23:29:34] Rotated volume range: [-1204, 3044] HU
+[2025-05-26 23:29:34] Generating standard AP projection
+[2025-05-26 23:29:34] Projection range: [-0.030, 9.420]
+[2025-05-26 23:29:34] Generating RIGHT view (small positive rotation)...
+[2025-05-26 23:29:34] Rotating volume by 1.5° around z axis
+[2025-05-26 23:29:38] Original volume range: [-1024, 3034] HU
+[2025-05-26 23:29:38] Rotated volume range: [-1230, 3062] HU
+[2025-05-26 23:29:38] Generating standard AP projection
+[2025-05-26 23:29:38] Projection range: [-0.042, 8.989]
+[2025-05-26 23:29:38] 
+HONEST ASSESSMENT of image differences:
+[2025-05-26 23:29:38]   Left-Center: 0.0068
+[2025-05-26 23:29:38]   Right-Center: 0.0068
+[2025-05-26 23:29:38]   Left-Right: 0.0113
+[2025-05-26 23:29:38] ✅ Detectable stereo differences achieved
+[2025-05-26 23:29:38] Stereo quality assessment: detectable
+[2025-05-26 23:29:38] Conservative stereo matching for honest depth assessment...
+[2025-05-26 23:29:47] CONSERVATIVE depth assessment:
+[2025-05-26 23:29:47]   Effective baseline: 52.4mm
+[2025-05-26 23:29:47]   Max disparity: 49.0 pixels
+[2025-05-26 23:29:47]   Mean disparity: 4.8 pixels
+[2025-05-26 23:29:47]   Coverage: 8.1% of pixels
+[2025-05-26 23:29:47] Honest depth assessment: meaningful
+[2025-05-26 23:29:50] Saved HONEST assessment to outputs/stereo_v10_rotation/comparison_LUNG1-001_AP.png
+[2025-05-26 23:29:50] 
+================================================================================
+[2025-05-26 23:29:50] V10 ROTATION - HONEST FINAL ASSESSMENT
+[2025-05-26 23:29:50] Time: 19.8 seconds
+[2025-05-26 23:29:50] Rotation angle: ±1.5°
+[2025-05-26 23:29:50] Stereo difference: 0.0113
+[2025-05-26 23:29:50] Stereo quality: detectable
+[2025-05-26 23:29:50] Max disparity: 49.0 pixels
+[2025-05-26 23:29:50] Depth coverage: 8.1%
+[2025-05-26 23:29:50] Depth quality: meaningful
+[2025-05-26 23:29:50] Output: outputs/stereo_v10_rotation
+[2025-05-26 23:29:50] ✅ V10 shows promise - requires USER VISUAL VERIFICATION
+[2025-05-26 23:29:50] 👁️ AWAITING USER VISUAL VERIFICATION OF RESULTS
+[2025-05-26 23:29:50] ================================================================================

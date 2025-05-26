@@ -1060,29 +1060,34 @@ All V7-V9 approaches attempted to create "stereo" through **post-processing mani
 | V7.4 Fast | 100mm | 10s | 100% (fake) | ❌ Artificial | Depth layer manipulation |
 | V8 Geometric | 80mm | 19s | 100% (noise) | ❌ Invisible | No visible parallax |
 | V9 Visible | 150mm | 117s | 100% (fake) | ❌ Distorted | Warped anatomy |
+| V10 Rotation | 52.4mm (1.5°) | 20s | 8.1% (real) | ✅ **First Success** | True geometric stereo |
 
 ### Critical Insights from Failures
 
-1. **V6 Was Actually Superior**: Despite lower metrics, V6's approach preserved anatomical accuracy while providing modest real depth information.
+1. **V10 Breakthrough**: First non-distorted stereo approach using volume rotation (8.1% real depth)
 
-2. **Metrics Can Mislead**: High depth coverage percentages in V7-V9 were from artifacts, not meaningful depth.
+2. **V6 Was Previously Superior**: Despite lower metrics, V6's approach preserved anatomical accuracy while providing modest real depth information.
 
-3. **Speed vs Quality**: Attempts to maintain speed led to shortcuts that broke the physics.
+3. **Metrics Can Mislead**: High depth coverage percentages in V7-V9 were from artifacts, not meaningful depth.
 
-4. **True Stereo Needs True Physics**: Cannot fake geometric stereo through image manipulation.
+4. **Speed vs Quality**: Attempts to maintain speed led to shortcuts that broke the physics.
 
-### Path Forward (Not Implemented)
+5. **True Stereo Needs True Physics**: Cannot fake geometric stereo through image manipulation.
 
-Based on V7-V9 failures, the correct approach for true stereo DRR would be:
+### Path Forward (V10 Foundation Established)
 
-1. **GPU-Accelerated Ray-Casting**: Use CUDA/OpenCL for performance
-2. **Dedicated Stereo Libraries**: Use RTK, TIGRE, or similar tools
-3. **Modest Baselines**: 20-40mm baselines with perfect implementation
-4. **Hybrid Approach**: Ray-casting for stereo, parallel projection for reference
+V10 establishes the correct foundation - volume rotation approach works without distortion. Future improvements should build on this:
 
-### Files Generated (All Failed Experiments)
+1. **Larger rotation angles**: Test 2-3° rotations while monitoring distortion
+2. **Multi-axis rotation**: Combine X, Y, Z rotations for enhanced baseline
+3. **Advanced interpolation**: GPU-accelerated volume resampling 
+4. **Optimization**: Parallel processing of multiple rotations
+5. **Alternative approaches**: GPU ray-casting with V10 as fallback
+
+### Files Generated (Failed Experiments + V10 Success)
 
 ```
+# Failed Experiments (V7-V9)
 scripts/drr_stereo_v7_true_depth.py     # Ray-casting timeout
 scripts/drr_stereo_v7_optimized.py     # Optimized ray-casting timeout  
 scripts/drr_stereo_v7_hybrid.py        # Hybrid approach timeout
@@ -1090,25 +1095,105 @@ scripts/drr_stereo_v7_fast.py          # Fast but artificial
 scripts/drr_stereo_v8_geometric.py     # Invisible parallax
 scripts/drr_stereo_v9_visible.py       # Distorted anatomy
 
-logs/stereo_drr_v7_*.log               # Execution logs
+# V10 Success
+scripts/drr_stereo_v10_rotation.py     # Volume rotation approach - WORKING
+
+logs/stereo_drr_v7_*.log               # V7 execution logs
 logs/stereo_drr_v8_geometric.log       # V8 execution log
-logs/stereo_drr_v9_visible.log         # V9 execution log
+logs/stereo_drr_v9_visible.log         # V9 execution log  
+logs/stereo_drr_v10_rotation.log       # V10 execution log
 
 outputs/stereo_v7_fast/                # V7.4 artificial results
 outputs/stereo_v8_geometric/           # V8 invisible parallax
 outputs/stereo_v9_visible/             # V9 distorted anatomy
+outputs/stereo_v10_rotation/           # V10 working stereo results
 ```
 
-### Conclusion from Failures
+### Conclusion from Failures and V10 Success
 
-The V7-V9 experiments represent a crucial learning experience in medical imaging development:
+The V7-V10 experiments represent a crucial learning experience in medical imaging development:
 
 - **High metrics don't guarantee success**: Coverage percentages and disparity ranges can be misleading
 - **Anatomical preservation is paramount**: Any approach that distorts natural anatomy is unacceptable
 - **Physics cannot be shortcuts**: True stereo requires true geometric implementation
-- **V6 Optimized remains the best approach**: Modest but real depth with preserved anatomy
+- **V10 establishes correct foundation**: Volume rotation approach works without distortion
+- **Modest real depth > fake high metrics**: 8.1% real depth better than 100% artifacts
 
-These failures reinforce that **V6 Optimized** represents the current state-of-the-art for this project, with its balanced approach of modest baseline, clean anatomy, and meaningful (if limited) depth information.
+**Current state-of-the-art**: V10 Rotation represents the first successful non-distorted stereo approach, though with limited 8.1% depth coverage requiring further optimization.
+
+### Stereo Version 10: Volume Rotation Recovery
+**Script**: `drr_stereo_v10_rotation.py`  
+**Status**: ✅ **MODEST SUCCESS - First Non-Distorted Stereo**  
+**Date**: 2025-05-26
+
+#### Motivation:
+After the complete failures of V7-V9, V10 takes a fundamentally different approach: instead of manipulating projections or images, rotate the CT volume itself by small angles to create true geometric viewing differences.
+
+#### Technical Approach:
+```python
+# Conservative volume rotation
+ROTATION_ANGLE_DEGREES = 1.5  # Small to avoid distortion
+transform = sitk.Euler3DTransform()
+transform.SetRotation(0, 0, angle_radians)  # Z-axis rotation
+resampler.SetInterpolator(sitk.sitkBSpline)  # High-quality interpolation
+```
+
+#### Parameters:
+- **Volume rotation**: ±1.5° around Z-axis  
+- **Interpolation**: B-spline for quality preservation
+- **Projection method**: Standard parallel projection (no tricks)
+- **Resolution**: 600 DPI 
+- **Processing time**: 19.8 seconds
+
+#### Results:
+- ✅ **No anatomical distortion**: Spine, ribs, clavicles appear natural
+- ✅ **Detectable stereo differences**: 0.0113 image difference (above 0.005 threshold)
+- ✅ **Real disparity**: 49 pixels maximum disparity
+- ⚠️ **Limited depth coverage**: 8.1% (honest assessment)
+- ✅ **Meaningful depth quality**: Disparity follows anatomical boundaries
+
+<div align="center">
+<img src="outputs/stereo_v10_rotation/comparison_LUNG1-001_AP.png" width="900">
+<br><i>V10 Rotation Results - FIRST SUCCESS: No distortion with modest real depth (8.1% coverage)</i>
+</div>
+
+#### Technical Assessment:
+
+**Stereo Quality Metrics:**
+- **Effective baseline**: 52.4mm (calculated from 1.5° rotation)
+- **Image differences**: 
+  - Left-Center: 0.0068
+  - Right-Center: 0.0068  
+  - Left-Right: 0.0113 (detectable)
+- **Stereo assessment**: "detectable" (conservative threshold)
+
+**Depth Quality Metrics:**
+- **Max disparity**: 49.0 pixels
+- **Mean disparity**: 4.8 pixels
+- **Depth coverage**: 8.1% of pixels (honest assessment)
+- **Depth quality**: "meaningful" (anatomically relevant)
+
+#### Critical Improvements Over V7-V9:
+1. **No distortion**: Anatomy preserved, unlike V9's warped results
+2. **Real geometry**: True volume rotation vs artificial image manipulation
+3. **Honest metrics**: 8.1% real depth vs V7-V9's fake 100%
+4. **Visual verification**: Actually looks like stereo X-rays
+
+#### Limitations (Honest Assessment):
+1. **Limited coverage**: Only 8.1% depth coverage - significant room for improvement
+2. **Small rotation angle**: Limited by distortion concerns
+3. **Computational overhead**: Volume rotation adds processing time
+4. **Still not clinical grade**: Insufficient depth for medical applications
+
+#### User Assessment:
+> "This is better, so I want you to update [...] (this is okay, this is not great because 8.1 is better than the fake 100%, but it's still 8.1, so there's room for improvement)"
+
+#### V10 as Foundation for Future Work:
+V10 establishes the **correct technical approach** - true geometric differences without distortion - but needs optimization:
+- **Larger rotation angles** (if distortion can be managed)
+- **Multiple rotation axes** (X, Y, Z combinations)
+- **Enhanced interpolation** methods
+- **GPU acceleration** for larger angles
 
 ## Conclusion
 
@@ -1154,7 +1239,8 @@ All code is open-source and available for further development. The journey shows
 
 ---
 *Generated with care by the DRR Development Team*  
-*Latest SUCCESS: V6 Optimized Stereo - 2025-05-24*  
+*Latest SUCCESS: V10 Rotation Stereo - 2025-05-26 (8.1% real depth, no distortion)*  
+*Previous SUCCESS: V6 Optimized Stereo - 2025-05-24 (2.7% real depth)*  
 *Failed Experiments: V7-V9 Stereo - 2025-05-26 (documented for learning)*  
-*Previous Success: V5 Enhanced Stereo - 2025-05-23*  
+*Foundation Success: V5 Enhanced Stereo - 2025-05-23*  
 *Special thanks to The Cancer Imaging Archive for providing the data*
