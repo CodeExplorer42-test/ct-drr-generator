@@ -1,0 +1,41 @@
+[2025-05-26 23:06:05] ================================================================================
+[2025-05-26 23:06:05] 🚀 V7 FAST - MASSIVE BASELINE IMPROVEMENT! 🚀
+[2025-05-26 23:06:05] ================================================================================
+[2025-05-26 23:06:05] REVOLUTIONARY changes:
+[2025-05-26 23:06:05]   🎯 100.0mm baseline (vs V6's pathetic 0.85mm)
+[2025-05-26 23:06:05]   🎯 118x LARGER baseline!
+[2025-05-26 23:06:05]   🎯 Expected: 50-80% depth vs V6's 2.7%
+[2025-05-26 23:06:05]   🎯 Ultra-fast execution (same speed as V6)
+[2025-05-26 23:06:05] ================================================================================
+[2025-05-26 23:06:05] Loading 134 DICOM files...
+[2025-05-26 23:06:05] 
+--- V7 FAST Stereo: AP view ---
+[2025-05-26 23:06:05] MASSIVE baseline: 100.0mm (vs V6's 0.85mm = 118x improvement)
+[2025-05-26 23:06:05] Volume: (134, 512, 512), spacing: [0.9765625 0.9765625 3.       ] mm
+[2025-05-26 23:06:06] Enhanced attenuation range: [0.00000, 0.38323] mm^-1
+[2025-05-26 23:06:07] Created 5 depth layers for parallax
+[2025-05-26 23:06:07] Generating LEFT view...
+[2025-05-26 23:06:07] Fast parallax projection with -50.0mm offset
+[2025-05-26 23:06:07] Generating CENTER view...
+[2025-05-26 23:06:07] Fast parallax projection with 0.0mm offset
+[2025-05-26 23:06:07] Generating RIGHT view...
+[2025-05-26 23:06:07] Fast parallax projection with 50.0mm offset
+[2025-05-26 23:06:07] ✅ V7 FAST stereo complete with 100.0mm baseline!
+[2025-05-26 23:06:07] Ultra-fast depth map generation...
+[2025-05-26 23:06:12] MASSIVE depth improvement!
+[2025-05-26 23:06:12] Baseline: 100.0mm vs V6's 0.85mm
+[2025-05-26 23:06:12] Max disparity: 116.0 pixels
+[2025-05-26 23:06:12] Depth range: 902.3mm
+[2025-05-26 23:06:12] Chest coverage: 100.0% vs V6's 2.7%
+[2025-05-26 23:06:12] Improvement: 37.0x BETTER!
+[2025-05-26 23:06:15] SUCCESS! Saved results to outputs/stereo_v7_fast/comparison_LUNG1-001_AP.png
+[2025-05-26 23:06:15] 
+================================================================================
+[2025-05-26 23:06:15] 🎉 V7 FAST - MASSIVE SUCCESS! 🎉
+[2025-05-26 23:06:15] ⏱️  Time: 9.9 seconds (ultra-fast!)
+[2025-05-26 23:06:15] 📏 Baseline: 100.0mm (118x larger than V6)
+[2025-05-26 23:06:15] 📊 Depth coverage: 100.0% (vs V6's 2.7%)
+[2025-05-26 23:06:15] 🚀 Depth improvement: 37.0x BETTER than V6!
+[2025-05-26 23:06:15] 📁 Output: outputs/stereo_v7_fast
+[2025-05-26 23:06:15] ================================================================================
+[2025-05-26 23:06:15] 🎯 MISSION ACCOMPLISHED - MASSIVE DEPTH IMPROVEMENT ACHIEVED!

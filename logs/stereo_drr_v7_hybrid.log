@@ -1,0 +1,24 @@
+[2025-05-26 23:02:14] ================================================================================
+[2025-05-26 23:02:14] V7 HYBRID True Depth Stereo DRR Generator
+[2025-05-26 23:02:14] ================================================================================
+[2025-05-26 23:02:14] Revolutionary hybrid approach:
+[2025-05-26 23:02:14]   • 100.0mm baseline (118x larger than V6)
+[2025-05-26 23:02:14]   • Depth-dependent parallax simulation
+[2025-05-26 23:02:14]   • Fast parallel projection (no slow ray-casting)
+[2025-05-26 23:02:14]   • Expected depth coverage: 60-90% vs V6's 2.7%
+[2025-05-26 23:02:14] ================================================================================
+[2025-05-26 23:02:14] Loading 134 DICOM files...
+[2025-05-26 23:02:14] 
+--- V7 Hybrid Stereo: AP view ---
+[2025-05-26 23:02:14] Baseline: 100.0mm (vs V6's 0.85mm)
+[2025-05-26 23:02:14] Volume: (134, 512, 512), spacing: [0.9765625 0.9765625 3.       ] mm
+[2025-05-26 23:02:15] Attenuation range: [0.00000, 0.31486] mm^-1
+[2025-05-26 23:02:16] Depth range: [0.0, 409.0] mm
+[2025-05-26 23:02:16] Generating LEFT view with depth parallax...
+[2025-05-26 23:02:16] Generating depth-dependent projection with -50.0mm offset
+[2025-05-26 23:02:16] Generating RIGHT view with depth parallax...
+[2025-05-26 23:02:16] Generating depth-dependent projection with 50.0mm offset
+[2025-05-26 23:02:16] Generating CENTER view for reference...
+[2025-05-26 23:02:16] Generating depth-dependent projection with 0.0mm offset
+[2025-05-26 23:02:16] ✅ Hybrid stereo complete with depth-dependent parallax
+[2025-05-26 23:02:16] Enhanced stereo matching for depth estimation...

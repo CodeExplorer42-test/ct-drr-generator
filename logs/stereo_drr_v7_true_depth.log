@@ -1,0 +1,25 @@
+[2025-05-26 22:53:46] ================================================================================
+[2025-05-26 22:53:46] V7 TRUE DEPTH Stereo DRR Generator
+[2025-05-26 22:53:46] ================================================================================
+[2025-05-26 22:53:46] Revolutionary improvements:
+[2025-05-26 22:53:46]   • TRUE perspective projection (not fake parallel)
+[2025-05-26 22:53:46]   • 150.0mm baseline (176x larger than V6!)
+[2025-05-26 22:53:46]   • 1000.0mm source-to-detector distance
+[2025-05-26 22:53:46]   • Advanced Census transform stereo matching
+[2025-05-26 22:53:46]   • Expected depth capture: 80-90% vs V6's pathetic 2.7%
+[2025-05-26 22:53:46] ================================================================================
+[2025-05-26 22:53:46] 
+Processing: NSCLC-Radiomics (LUNG1-001)
+[2025-05-26 22:53:46] Loading 134 DICOM files...
+[2025-05-26 22:53:46] 
+--- V7 True Depth Generation: AP view ---
+[2025-05-26 22:53:46] Volume: (134, 512, 512), spacing: [0.9765625 0.9765625 3.       ] mm
+[2025-05-26 22:53:47] Attenuation range: [0.00000, 0.26815] mm^-1
+[2025-05-26 22:53:47] Stereo geometry: 150.0mm baseline, 1000.0mm SID
+[2025-05-26 22:53:47] Volume center: [   0.48828125 -210.51171875 -480.5       ]
+[2025-05-26 22:53:47] Source left: [  75.48828125 -710.51171875 -480.5       ]
+[2025-05-26 22:53:47] Source right: [ -74.51171875 -710.51171875 -480.5       ]
+[2025-05-26 22:53:47] Detector: 1800x2160 pixels at 1200 DPI
+[2025-05-26 22:53:47] Generating LEFT perspective projection...
+[2025-05-26 22:53:47] Generating perspective DRR from source at [  75.48828125 -710.51171875 -480.5       ]
+[2025-05-26 22:53:47] Progress: 0.0%

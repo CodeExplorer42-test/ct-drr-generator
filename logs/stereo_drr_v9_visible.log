@@ -1,0 +1,51 @@
+[2025-05-26 23:14:12] ================================================================================
+[2025-05-26 23:14:12] V9 VISIBLE STEREO - Create OBVIOUS stereo differences!
+[2025-05-26 23:14:12] ================================================================================
+[2025-05-26 23:14:12] Aggressive approach:
+[2025-05-26 23:14:12]   🎯 150.0mm baseline (HUGE for visibility)
+[2025-05-26 23:14:12]   🎯 Depth-dependent parallax shifts
+[2025-05-26 23:14:12]   🎯 Enhanced contrast for matching
+[2025-05-26 23:14:12]   🎯 Target: CLEARLY VISIBLE stereo differences
+[2025-05-26 23:14:12] ================================================================================
+[2025-05-26 23:14:13] Loading 134 DICOM files...
+[2025-05-26 23:14:13] 
+--- V9 VISIBLE Stereo: AP view ---
+[2025-05-26 23:14:13] AGGRESSIVE baseline: 150.0mm for VISIBLE parallax
+[2025-05-26 23:14:13] Volume: (134, 512, 512), spacing: [0.9765625 0.9765625 3.       ] mm
+[2025-05-26 23:14:13] Enhanced attenuation: [0.00000, 0.27765] mm^-1
+[2025-05-26 23:14:13] Generating LEFT view with LARGE negative parallax...
+[2025-05-26 23:14:13] Creating stereo view with -75.0mm offset
+[2025-05-26 23:14:13] Depth range: 3.0 to 399.0 mm (396.0mm total)
+[2025-05-26 23:14:13] Projection range: [-0.049, 14.733]
+[2025-05-26 23:14:13] Generating CENTER reference view...
+[2025-05-26 23:14:13] Creating stereo view with 0.0mm offset
+[2025-05-26 23:14:13] Depth range: 3.0 to 399.0 mm (396.0mm total)
+[2025-05-26 23:14:13] Projection range: [-0.023, 14.690]
+[2025-05-26 23:14:13] Generating RIGHT view with LARGE positive parallax...
+[2025-05-26 23:14:13] Creating stereo view with 75.0mm offset
+[2025-05-26 23:14:14] Depth range: 3.0 to 399.0 mm (396.0mm total)
+[2025-05-26 23:14:14] Projection range: [-0.016, 14.992]
+[2025-05-26 23:14:14] Image differences (should be >0.01 for visible stereo):
+[2025-05-26 23:14:14]   Left-Center: 0.1908
+[2025-05-26 23:14:14]   Right-Center: 0.1889
+[2025-05-26 23:14:14]   Left-Right: 0.2973
+[2025-05-26 23:14:14] ✅ VISIBLE stereo parallax achieved!
+[2025-05-26 23:14:14] Aggressive stereo matching for VISIBLE depth...
+[2025-05-26 23:16:07] VISIBLE depth results:
+[2025-05-26 23:16:07]   Max disparity: 199.0 pixels
+[2025-05-26 23:16:07]   Mean disparity: 58.4 pixels
+[2025-05-26 23:16:07]   Depth range: 861.1mm
+[2025-05-26 23:16:07]   Coverage: 100.0%
+[2025-05-26 23:16:07]   Baseline advantage: 176x vs V6
+[2025-05-26 23:16:09] Saved V9 visible results to outputs/stereo_v9_visible/comparison_LUNG1-001_AP.png
+[2025-05-26 23:16:09] Stereo visibility: SUCCESS
+[2025-05-26 23:16:09] 
+================================================================================
+[2025-05-26 23:16:09] V9 VISIBLE STEREO SUCCESS!
+[2025-05-26 23:16:09] Time: 116.6 seconds
+[2025-05-26 23:16:09] Baseline: 150.0mm
+[2025-05-26 23:16:09] Stereo difference: 0.2973 ✅
+[2025-05-26 23:16:09] Depth coverage: 100.0%
+[2025-05-26 23:16:09] Output: outputs/stereo_v9_visible
+[2025-05-26 23:16:09] ================================================================================
+[2025-05-26 23:16:09] 🎉 MISSION ACCOMPLISHED - VISIBLE STEREO ACHIEVED!

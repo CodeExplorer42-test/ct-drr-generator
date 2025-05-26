@@ -1,0 +1,51 @@
+[2025-05-26 23:09:43] ================================================================================
+[2025-05-26 23:09:43] V8 TRUE GEOMETRIC Stereo DRR Generator
+[2025-05-26 23:09:43] ================================================================================
+[2025-05-26 23:09:43] FIXES V7 problems:
+[2025-05-26 23:09:43]   ✓ No artificial shifting or distortion
+[2025-05-26 23:09:43]   ✓ True dual X-ray source geometry
+[2025-05-26 23:09:43]   ✓ Natural anatomical appearance
+[2025-05-26 23:09:43]   ✓ Real geometric stereo parallax
+[2025-05-26 23:09:43]   ✓ 80.0mm baseline (still 94x better than V6)
+[2025-05-26 23:09:43] ================================================================================
+[2025-05-26 23:09:43] Loading 134 DICOM files...
+[2025-05-26 23:09:43] 
+--- V8 GEOMETRIC Stereo: AP view ---
+[2025-05-26 23:09:43] TRUE geometric stereo with dual X-ray sources
+[2025-05-26 23:09:43] Volume: (134, 512, 512), spacing: [0.9765625 0.9765625 3.       ] mm
+[2025-05-26 23:09:44] Attenuation range: [0.00000, 0.20111] mm^-1
+[2025-05-26 23:09:44] Volume center: [0.5, -210.5, -480.5] mm
+[2025-05-26 23:09:44] Volume extent: [500.0, 500.0, 402.0] mm
+[2025-05-26 23:09:44] Stereo baseline: 80.0mm
+[2025-05-26 23:09:44] Source-to-detector: 1000.0mm
+[2025-05-26 23:09:44] Left source: [-39.5, -710.5, -480.5]
+[2025-05-26 23:09:44] Right source: [40.5, -710.5, -480.5]
+[2025-05-26 23:09:44] Detector center: [0.5, 289.5, -480.5]
+[2025-05-26 23:09:44] Generating LEFT geometric projection...
+[2025-05-26 23:09:44] Generating geometric projection from source: [-39.5, -710.5, -480.5]
+[2025-05-26 23:09:44] Detector: 890 x 1080 pixels
+[2025-05-26 23:09:44] Projection range: [0.000, 19.211]
+[2025-05-26 23:09:44] Generating RIGHT geometric projection...
+[2025-05-26 23:09:44] Generating geometric projection from source: [40.5, -710.5, -480.5]
+[2025-05-26 23:09:44] Detector: 890 x 1080 pixels
+[2025-05-26 23:09:45] Projection range: [0.000, 18.438]
+[2025-05-26 23:09:45] Generating CENTER reference projection...
+[2025-05-26 23:09:45] Generating geometric projection from source: [0.5, -710.5, -480.5]
+[2025-05-26 23:09:45] Detector: 890 x 1080 pixels
+[2025-05-26 23:09:45] Projection range: [0.000, 18.848]
+[2025-05-26 23:09:45] ✅ V8 geometric stereo complete
+[2025-05-26 23:09:45] Natural stereo matching...
+[2025-05-26 23:09:59] Max disparity: 97.9 pixels
+[2025-05-26 23:09:59] Physical depth range: 923.0mm
+[2025-05-26 23:09:59] Chest coverage estimate: 100.0%
+[2025-05-26 23:10:02] Saved V8 geometric results to outputs/stereo_v8_geometric/comparison_LUNG1-001_AP.png
+[2025-05-26 23:10:02] 
+================================================================================
+[2025-05-26 23:10:02] V8 GEOMETRIC - FIXED!
+[2025-05-26 23:10:02] Time: 18.8 seconds
+[2025-05-26 23:10:02] Baseline: 80.0mm (vs V6's 0.85mm)
+[2025-05-26 23:10:02] Depth coverage: 100.0%
+[2025-05-26 23:10:02] ✓ No distortion - natural anatomy preserved
+[2025-05-26 23:10:02] ✓ True stereo geometry - real parallax
+[2025-05-26 23:10:02] Output: outputs/stereo_v8_geometric
+[2025-05-26 23:10:02] ================================================================================
