@@ -1,0 +1,47 @@
+[2025-05-27 00:56:16] ================================================================================
+[2025-05-27 00:56:16] V12 Optimized Geometry Stereo DRR Generator
+[2025-05-27 00:56:16] ================================================================================
+[2025-05-27 00:56:16] Research-based optimal parameters:
+[2025-05-27 00:56:16]   • Stereo angle: 5.0° (3-7° optimal range)
+[2025-05-27 00:56:16]   • Ray step: 0.75mm (0.5-1.0mm optimal)
+[2025-05-27 00:56:16]   • Source distance: 1200.0mm
+[2025-05-27 00:56:16]   • V6 advanced features: 7-tissue, scatter, edge enhancement
+[2025-05-27 00:56:16]   • Output: 1200 DPI (0.2mm pixels)
+[2025-05-27 00:56:16] ================================================================================
+[2025-05-27 00:56:16] Loading 134 DICOM files...
+[2025-05-27 00:56:16] 
+--- V12 Optimized Geometry Stereo Generation ---
+[2025-05-27 00:56:16] Combining V6 features with proper stereo geometry
+[2025-05-27 00:56:16] Volume: (134, 512, 512), spacing: [0.9765625 0.9765625 3.       ] mm
+[2025-05-27 00:56:16] Stereo angle: 5.0° (research optimal)
+[2025-05-27 00:56:16] Ray step size: 0.75mm
+[2025-05-27 00:56:16] 
+Applying 7-tissue segmentation...
+[2025-05-27 00:56:17] Attenuation range: [0.00000, 0.21061] mm^-1
+[2025-05-27 00:56:17] 
+Generating CENTER view...
+[2025-05-27 00:56:17]   Projection stats: min=0.000, max=10.779
+[2025-05-27 00:56:17]   Effective ray step: 0.977mm
+[2025-05-27 00:56:17] 
+Generating LEFT view...
+[2025-05-27 00:56:17] Rotating volume by -2.5°
+[2025-05-27 00:56:21]   Original range: [-1024, 3034] HU
+[2025-05-27 00:56:21]   Rotated range: [-1277, 3061] HU
+[2025-05-27 00:56:21]   Projection stats: min=0.000, max=11.364
+[2025-05-27 00:56:21]   Effective ray step: 0.977mm
+[2025-05-27 00:56:21] 
+Generating RIGHT view...
+[2025-05-27 00:56:21] Rotating volume by 2.5°
+[2025-05-27 00:56:25]   Original range: [-1024, 3034] HU
+[2025-05-27 00:56:25]   Rotated range: [-1268, 3069] HU
+[2025-05-27 00:56:26]   Projection stats: min=0.000, max=10.463
+[2025-05-27 00:56:26]   Effective ray step: 0.977mm
+[2025-05-27 00:56:26] 
+Stereo metrics:
+[2025-05-27 00:56:26]   Image difference: 0.0270
+[2025-05-27 00:56:26]   Effective baseline: 104.7mm
+[2025-05-27 00:56:26]   Convergence angle: 5.0°
+[2025-05-27 00:56:26] 
+Performing advanced depth estimation...
+[2025-05-27 00:56:26]   Max disparity search: 314 pixels
+[2025-05-27 00:56:26]   Multi-scale blocks: [7, 11, 15]

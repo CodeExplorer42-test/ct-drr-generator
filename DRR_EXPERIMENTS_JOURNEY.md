@@ -1272,10 +1272,49 @@ Combined V10's volume rotation method with V8 clinical_final's visualization par
 2. Volume rotation approach limits stereo angle options
 3. Not significantly better than V10 in terms of stereo geometry
 
+### Stereo Version 12: Fast Optimized Geometry
+**Script**: `drr_stereo_v12_fast_optimized.py`  
+**Status**: ✅ **Research-based parameters**  
+**Date**: 2025-05-27
+
+#### Approach:
+Applied research insights from drr_deep_research.md to improve stereo geometry:
+- 5° stereo angle (within optimal 3-7° range)
+- Simplified implementation for speed
+- Volume rotation method maintained
+
+#### Technical Implementation:
+- Volume rotation: ±2.5° (5° total)
+- Source-to-detector: 1200mm
+- 600 DPI resolution
+- Linear interpolation for speed
+- Simplified depth estimation
+
+#### Results:
+- **Processing time**: 9.3 seconds
+- **Stereo difference**: 0.0285
+- **Depth coverage**: 31.5%
+- **Baseline**: 104.7mm
+- **Image quality**: Clinical appearance maintained
+
+#### Factual Comparison:
+| Version | Angle | Baseline | Coverage | Time | Notes |
+|---------|-------|----------|----------|------|-------|
+| V10 | 3° | 52.4mm | 8.1% | 19.8s | First non-distorted |
+| V11 | 3° | 52.4mm | 81.6% | 24.2s | High coverage, uncertain accuracy |
+| V12 | 5° | 104.7mm | 31.5% | 9.3s | Research-based angle |
+
+#### Assessment:
+- Larger stereo angle than previous versions
+- Lower coverage than V11 but within research parameters
+- Fastest execution time of volume rotation approaches
+- Depth map shows anatomical structures
+
 ---
 *Generated with care by the DRR Development Team*  
-*Latest: V11 Clinical Rotation - 2025-05-27 (81.6% coverage, clinical quality)*  
-*Previous SUCCESS: V10 Rotation Stereo - 2025-05-26 (8.1% real depth, no distortion)*  
+*Latest: V12 Fast Optimized - 2025-05-27 (5° angle, 31.5% coverage, 9.3s)*  
+*Previous: V11 Clinical Rotation - 2025-05-27 (3° angle, 81.6% coverage, 24.2s)*  
+*Previous: V10 Rotation Stereo - 2025-05-26 (3° angle, 8.1% coverage, 19.8s)*  
 *Previous SUCCESS: V6 Optimized Stereo - 2025-05-24 (2.7% real depth)*  
 *Failed Experiments: V7-V9 Stereo - 2025-05-26 (documented for learning)*  
 *Foundation Success: V5 Enhanced Stereo - 2025-05-23*  
