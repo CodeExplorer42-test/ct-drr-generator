@@ -1237,9 +1237,45 @@ All code is open-source and available for further development. The journey shows
 
 **⚠️ IMPORTANT**: V7-V9 scripts are preserved for educational purposes but should NOT be used for production. V6 Optimized remains the recommended approach.
 
+### Stereo Version 11: Clinical Rotation
+**Script**: `drr_stereo_v11_clinical_rotation.py`  
+**Status**: ✅ **Improved but not optimal**  
+**Date**: 2025-05-27
+
+#### Approach:
+Combined V10's volume rotation method with V8 clinical_final's visualization parameters to improve image quality while maintaining non-distorted stereo.
+
+#### Technical Implementation:
+- Volume rotation: ±1.5° (same as V10)
+- Clinical tissue segmentation from V8
+- 2.5x bone enhancement multiplier
+- Standard X-ray film dimensions (14"×17")
+- 1st/99th percentile normalization
+
+#### Results:
+- **Processing time**: 24.2 seconds
+- **Stereo difference**: 0.0158 (strong stereo separation)
+- **Depth coverage**: 81.6%
+- **Max disparity**: 99 pixels
+- **Baseline**: 52.4mm
+- **Image quality**: Clinical appearance with good contrast
+
+#### Factual Assessment:
+- ✅ Better visualization than previous V11 attempts
+- ✅ No anatomical distortion
+- ✅ High depth coverage percentage
+- ⚠️ Depth map accuracy uncertain - shows structure but validation needed
+- ⚠️ Still using horizontal shift approach, not true perspective projection
+
+#### Limitations:
+1. Depth map may not accurately represent true 3D structure
+2. Volume rotation approach limits stereo angle options
+3. Not significantly better than V10 in terms of stereo geometry
+
 ---
 *Generated with care by the DRR Development Team*  
-*Latest SUCCESS: V10 Rotation Stereo - 2025-05-26 (8.1% real depth, no distortion)*  
+*Latest: V11 Clinical Rotation - 2025-05-27 (81.6% coverage, clinical quality)*  
+*Previous SUCCESS: V10 Rotation Stereo - 2025-05-26 (8.1% real depth, no distortion)*  
 *Previous SUCCESS: V6 Optimized Stereo - 2025-05-24 (2.7% real depth)*  
 *Failed Experiments: V7-V9 Stereo - 2025-05-26 (documented for learning)*  
 *Foundation Success: V5 Enhanced Stereo - 2025-05-23*  

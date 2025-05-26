@@ -1,0 +1,49 @@
+[2025-05-27 00:22:28] ================================================================================
+[2025-05-27 00:22:28] V12 FIXED Stereo DRR Generator
+[2025-05-27 00:22:28] ================================================================================
+[2025-05-27 00:22:28] Fixes from V11:
+[2025-05-27 00:22:28]   • Clinical tissue attenuation for proper visibility
+[2025-05-27 00:22:28]   • Correct aspect ratio (no compression)
+[2025-05-27 00:22:28]   • Larger stereo angle (6°) for meaningful depth
+[2025-05-27 00:22:28]   • Single gamma correction
+[2025-05-27 00:22:28] ================================================================================
+[2025-05-27 00:22:28] Loading 134 DICOM files...
+[2025-05-27 00:22:29] 
+--- V12 FIXED Stereo Generation ---
+[2025-05-27 00:22:29] Volume shape: (134, 512, 512), spacing: [0.9765625 0.9765625 3.       ] mm
+[2025-05-27 00:22:29] CT Volume:
+[2025-05-27 00:22:29]   Physical dimensions: [500. 500. 402.] mm
+[2025-05-27 00:22:29]   Chest depth: 402.0mm
+[2025-05-27 00:22:29] 
+Stereo Parameters:
+[2025-05-27 00:22:29]   Stereo angle: ±3.0° (total 6.0°)
+[2025-05-27 00:22:29]   Baseline: 188.4mm
+[2025-05-27 00:22:29]   Focal length: 1800.0mm
+[2025-05-27 00:22:29] 
+Expected Disparities:
+[2025-05-27 00:22:29]   Anterior structures (~100mm): 8478.4 pixels
+[2025-05-27 00:22:29]   Posterior structures (~502mm): 1688.9 pixels
+[2025-05-27 00:22:29]   Range: 1688.9 - 8478.4 pixels
+[2025-05-27 00:22:29] 
+Applying clinical tissue segmentation...
+[2025-05-27 00:22:29] Clinical attenuation range: [0.00010, 0.10000] mm^-1
+[2025-05-27 00:22:29] 
+Generating CENTER view...
+[2025-05-27 00:22:29] Generating LEFT view...
+[2025-05-27 00:22:29] Rotating volume by -3.0°
+[2025-05-27 00:22:30] Clinical attenuation range: [0.00010, 0.10000] mm^-1
+[2025-05-27 00:22:30] Generating RIGHT view...
+[2025-05-27 00:22:30] Rotating volume by 3.0°
+[2025-05-27 00:22:30] Clinical attenuation range: [0.00010, 0.10000] mm^-1
+[2025-05-27 00:22:31] 
+Stereo quality:
+[2025-05-27 00:22:31]   Image difference (L-R): 0.0077
+[2025-05-27 00:22:31]   Status: ⚠️ Limited stereo
+[2025-05-27 00:22:32] Saved outputs to outputs/stereo_v12_fixed
+[2025-05-27 00:22:32] 
+================================================================================
+[2025-05-27 00:22:32] V12 COMPLETE - All Issues Fixed
+[2025-05-27 00:22:32] Time: 3.7 seconds
+[2025-05-27 00:22:32] Stereo difference: 0.0077
+[2025-05-27 00:22:32] Output: outputs/stereo_v12_fixed
+[2025-05-27 00:22:32] ================================================================================

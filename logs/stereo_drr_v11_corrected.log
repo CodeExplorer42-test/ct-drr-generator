@@ -1,0 +1,48 @@
+[2025-05-26 23:56:58] ================================================================================
+[2025-05-26 23:56:58] V11 CORRECTED Stereo DRR Generator
+[2025-05-26 23:56:58] ================================================================================
+[2025-05-26 23:56:58] COMPLETE REBUILD fixing V10 geometry errors:
+[2025-05-26 23:56:58]   • Correct baseline calculation from 3.0° stereo angle
+[2025-05-26 23:56:58]   • Proper focal length for stereo reconstruction
+[2025-05-26 23:56:58]   • Validation against 402mm chest depth
+[2025-05-26 23:56:58]   • Realistic depth ranges for anatomy
+[2025-05-26 23:56:58] ================================================================================
+[2025-05-26 23:56:58] Loading 134 DICOM files...
+[2025-05-26 23:56:58] 
+--- V11 CORRECTED Stereo Generation ---
+[2025-05-26 23:56:58] COMPLETE REBUILD with correct stereo geometry
+[2025-05-26 23:56:58] Volume: (134, 512, 512), spacing: [0.9765625 0.9765625 3.       ] mm
+[2025-05-26 23:56:58] CT Volume physical dimensions:
+[2025-05-26 23:56:58]   Size: [512 512 134] voxels
+[2025-05-26 23:56:58]   Spacing: [0.9765625 0.9765625 3.       ] mm
+[2025-05-26 23:56:58]   Physical extent: [500. 500. 402.] mm
+[2025-05-26 23:56:58]   Chest depth (Z): 402.0mm
+[2025-05-26 23:56:58] 
+CORRECTED Stereo Geometry:
+[2025-05-26 23:56:58]   Stereo angle: ±1.5° (total 3.0°)
+[2025-05-26 23:56:58]   TRUE baseline: 26.2mm
+[2025-05-26 23:56:58]   Source-to-detector: 1000.0mm
+[2025-05-26 23:56:58]   Focal length: 1000.0mm
+[2025-05-26 23:56:58]   Left source: [-12.6, -710.5, -480.5]
+[2025-05-26 23:56:58]   Right source: [13.6, -710.5, -480.5]
+[2025-05-26 23:56:58]   Detector center: [0.5, 289.5, -480.5]
+[2025-05-26 23:56:58] 
+STEREO PARAMETER VALIDATION:
+[2025-05-26 23:56:58] Stereo formula: Depth = (focal_length × baseline) / (disparity × pixel_spacing)
+[2025-05-26 23:56:58]   Focal length: 1000.0mm
+[2025-05-26 23:56:58]   Baseline: 26.2mm
+[2025-05-26 23:56:58]   Pixel spacing: 0.4mm
+[2025-05-26 23:56:58] 
+EXPECTED DISPARITY RANGE for chest anatomy:
+[2025-05-26 23:56:58]   Closest depth (~anterior): 50mm → disparity: 1308.8 pixels
+[2025-05-26 23:56:58]   Farthest depth (~posterior): 402.0mm → disparity: 162.8 pixels
+[2025-05-26 23:56:58]   Expected disparity range: 162.8 - 1308.8 pixels
+[2025-05-26 23:56:58]   Depth sensitivity: 65442.4mm per pixel disparity
+[2025-05-26 23:56:59] Attenuation range: [0.00000, 0.16279] mm^-1
+[2025-05-26 23:56:59] 
+Generating LEFT perspective projection...
+[2025-05-26 23:56:59] Generating CORRECTED perspective projection
+[2025-05-26 23:56:59] Source: [-12.6, -710.5, -480.5]
+[2025-05-26 23:56:59] Detector: 890 × 1080 pixels
+[2025-05-26 23:56:59] Ray casting through volume...
+[2025-05-26 23:56:59]   Progress: 0.0%

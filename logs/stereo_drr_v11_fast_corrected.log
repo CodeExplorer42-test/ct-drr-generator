@@ -1,0 +1,420 @@
+[2025-05-27 00:03:04] ================================================================================
+[2025-05-27 00:03:04] V11 FAST CORRECTED Stereo DRR Generator
+[2025-05-27 00:03:04] ================================================================================
+[2025-05-27 00:03:04] Fast version with CORRECTED stereo geometry:
+[2025-05-27 00:03:04]   • Use V10's volume rotation (fast)
+[2025-05-27 00:03:04]   • Fix baseline calculation (V10 was wrong)
+[2025-05-27 00:03:04]   • Validate against 402mm chest anatomy
+[2025-05-27 00:03:04]   • Provide correct parameters for reconstruction
+[2025-05-27 00:03:04] ================================================================================
+[2025-05-27 00:03:04] Loading 134 DICOM files...
+[2025-05-27 00:03:04] 
+--- V11 FAST CORRECTED Stereo Generation ---
+[2025-05-27 00:03:04] Using V10's fast volume rotation with CORRECTED geometry calculations
+[2025-05-27 00:03:04] Volume: (134, 512, 512), spacing: [0.9765625 0.9765625 3.       ] mm
+[2025-05-27 00:03:04] CT Volume Analysis:
+[2025-05-27 00:03:04]   Volume size: [512 512 134] voxels
+[2025-05-27 00:03:04]   Voxel spacing: [0.9765625 0.9765625 3.       ] mm
+[2025-05-27 00:03:04]   Physical dimensions: [500. 500. 402.] mm
+[2025-05-27 00:03:04]   Chest depth (Z-direction): 402.0mm
+[2025-05-27 00:03:04] 
+CORRECTED Stereo Parameters:
+[2025-05-27 00:03:04]   Stereo angle: ±1.5° (total 3.0°)
+[2025-05-27 00:03:04]   CORRECTED baseline: 26.2mm
+[2025-05-27 00:03:04]   Focal length: 1000.0mm
+[2025-05-27 00:03:04]   Pixel spacing: 0.4mm
+[2025-05-27 00:03:04] 
+VALIDATION against chest anatomy:
+[2025-05-27 00:03:04]   Expected depth range: 50mm - 402mm
+[2025-05-27 00:03:04]   Expected max disparity: 1308.8 pixels (anterior structures)
+[2025-05-27 00:03:04]   Expected min disparity: 162.8 pixels (posterior structures)
+[2025-05-27 00:03:04]   Disparity range: 162.8 - 1308.8 pixels
+[2025-05-27 00:03:04]   Depth sensitivity: 65442.4mm per pixel disparity
+[2025-05-27 00:03:04]   1 pixel disparity = 65442.4mm depth difference
+[2025-05-27 00:03:04] Attenuation range: [0.00000, 0.16279] mm^-1
+[2025-05-27 00:03:04] Generating CENTER view...
+[2025-05-27 00:03:04] Generating LEFT view...
+[2025-05-27 00:03:04] Rotating volume by -1.5° around z axis
+[2025-05-27 00:03:08]   Original HU range: [-1024, 3034]
+[2025-05-27 00:03:08]   Rotated HU range: [-1204, 3044]
+[2025-05-27 00:03:08] Generating RIGHT view...
+[2025-05-27 00:03:08] Rotating volume by 1.5° around z axis
+[2025-05-27 00:03:12]   Original HU range: [-1024, 3034]
+[2025-05-27 00:03:12]   Rotated HU range: [-1230, 3062]
+[2025-05-27 00:03:12] 
+V11 FAST CORRECTED Results:
+[2025-05-27 00:03:12]   Image difference (L-R): 0.0012
+[2025-05-27 00:03:12]   ⚠️ Minimal stereo differences
+[2025-05-27 00:03:12] ✅ V11 fast corrected stereo generation complete
+[2025-05-27 00:03:14] Saved V11 fast corrected results to outputs/stereo_v11_fast_corrected/comparison_LUNG1-001_AP.png
+[2025-05-27 00:03:14] 
+================================================================================
+[2025-05-27 00:03:14] V11 FAST CORRECTED - FINAL PARAMETERS
+[2025-05-27 00:03:14] Time: 10.7 seconds
+[2025-05-27 00:03:14] 
+[2025-05-27 00:03:14] CORRECTED STEREO PARAMETERS FOR RECONSTRUCTION:
+[2025-05-27 00:03:14]   Baseline: 26.2mm
+[2025-05-27 00:03:14]   Focal length: 1000.0mm
+[2025-05-27 00:03:14]   Pixel spacing: 0.4mm
+[2025-05-27 00:03:14] 
+[2025-05-27 00:03:14] VALIDATION AGAINST CHEST ANATOMY:
+[2025-05-27 00:03:14]   Chest depth: 402mm
+[2025-05-27 00:03:14]   Expected disparity range: 162.8 - 1308.8 pixels
+[2025-05-27 00:03:14]   Depth sensitivity: 65442.4mm per pixel
+[2025-05-27 00:03:14] 
+[2025-05-27 00:03:14] STEREO QUALITY:
+[2025-05-27 00:03:14]   Image difference: 0.0012
+[2025-05-27 00:03:14]   Status: ⚠️ May need larger baseline
+[2025-05-27 00:03:14] 
+[2025-05-27 00:03:14] Output: outputs/stereo_v11_fast_corrected
+[2025-05-27 00:03:14] ================================================================================
+[2025-05-27 00:03:48] ================================================================================
+[2025-05-27 00:03:48] V11 FAST CORRECTED Stereo DRR Generator
+[2025-05-27 00:03:48] ================================================================================
+[2025-05-27 00:03:48] Fast version with CORRECTED stereo geometry:
+[2025-05-27 00:03:48]   • Use V10's volume rotation (fast)
+[2025-05-27 00:03:48]   • Fix baseline calculation (V10 was wrong)
+[2025-05-27 00:03:48]   • Validate against 402mm chest anatomy
+[2025-05-27 00:03:48]   • Provide correct parameters for reconstruction
+[2025-05-27 00:03:48] ================================================================================
+[2025-05-27 00:03:48] Loading 134 DICOM files...
+[2025-05-27 00:03:48] 
+--- V11 FAST CORRECTED Stereo Generation ---
+[2025-05-27 00:03:48] Using V10's fast volume rotation with CORRECTED geometry calculations
+[2025-05-27 00:03:48] Volume: (134, 512, 512), spacing: [0.9765625 0.9765625 3.       ] mm
+[2025-05-27 00:03:48] CT Volume Analysis:
+[2025-05-27 00:03:48]   Volume size: [512 512 134] voxels
+[2025-05-27 00:03:48]   Voxel spacing: [0.9765625 0.9765625 3.       ] mm
+[2025-05-27 00:03:48]   Physical dimensions: [500. 500. 402.] mm
+[2025-05-27 00:03:48]   Chest depth (Z-direction): 402.0mm
+[2025-05-27 00:03:48] 
+CORRECTED Stereo Parameters:
+[2025-05-27 00:03:48]   Stereo angle: ±1.5° (total 3.0°)
+[2025-05-27 00:03:48]   CORRECTED baseline: 52.4mm
+[2025-05-27 00:03:48]   Focal length: 1000.0mm
+[2025-05-27 00:03:48]   Pixel spacing: 0.4mm
+[2025-05-27 00:03:48] 
+VALIDATION against chest anatomy:
+[2025-05-27 00:03:48]   Expected depth range: 50mm - 402mm
+[2025-05-27 00:03:48]   Expected max disparity: 2617.7 pixels (anterior structures)
+[2025-05-27 00:03:48]   Expected min disparity: 325.6 pixels (posterior structures)
+[2025-05-27 00:03:48]   Disparity range: 325.6 - 2617.7 pixels
+[2025-05-27 00:03:48]   Depth sensitivity: 130884.7mm per pixel disparity
+[2025-05-27 00:03:48]   1 pixel disparity = 130884.7mm depth difference
+[2025-05-27 00:03:48] Attenuation range: [0.00000, 0.16279] mm^-1
+[2025-05-27 00:03:48] Generating CENTER view...
+[2025-05-27 00:03:48] Generating LEFT view...
+[2025-05-27 00:03:48] Rotating volume by -1.5° around z axis
+[2025-05-27 00:03:52]   Original HU range: [-1024, 3034]
+[2025-05-27 00:03:52]   Rotated HU range: [-1204, 3044]
+[2025-05-27 00:03:52] Generating RIGHT view...
+[2025-05-27 00:03:52] Rotating volume by 1.5° around z axis
+[2025-05-27 00:03:56]   Original HU range: [-1024, 3034]
+[2025-05-27 00:03:56]   Rotated HU range: [-1230, 3062]
+[2025-05-27 00:03:56] 
+V11 FAST CORRECTED Results:
+[2025-05-27 00:03:56]   Image difference (L-R): 0.0012
+[2025-05-27 00:03:56]   ⚠️ Minimal stereo differences
+[2025-05-27 00:03:56] ✅ V11 fast corrected stereo generation complete
+[2025-05-27 00:03:58] Saved V11 fast corrected results to outputs/stereo_v11_fast_corrected/comparison_LUNG1-001_AP.png
+[2025-05-27 00:03:58] 
+================================================================================
+[2025-05-27 00:03:58] V11 FAST CORRECTED - FINAL PARAMETERS
+[2025-05-27 00:03:58] Time: 10.6 seconds
+[2025-05-27 00:03:58] 
+[2025-05-27 00:03:58] CORRECTED STEREO PARAMETERS FOR RECONSTRUCTION:
+[2025-05-27 00:03:58]   Baseline: 52.4mm
+[2025-05-27 00:03:58]   Focal length: 1000.0mm
+[2025-05-27 00:03:58]   Pixel spacing: 0.4mm
+[2025-05-27 00:03:58] 
+[2025-05-27 00:03:58] VALIDATION AGAINST CHEST ANATOMY:
+[2025-05-27 00:03:58]   Chest depth: 402mm
+[2025-05-27 00:03:58]   Expected disparity range: 325.6 - 2617.7 pixels
+[2025-05-27 00:03:58]   Depth sensitivity: 130884.7mm per pixel
+[2025-05-27 00:03:58] 
+[2025-05-27 00:03:58] STEREO QUALITY:
+[2025-05-27 00:03:58]   Image difference: 0.0012
+[2025-05-27 00:03:58]   Status: ⚠️ May need larger baseline
+[2025-05-27 00:03:58] 
+[2025-05-27 00:03:58] Output: outputs/stereo_v11_fast_corrected
+[2025-05-27 00:03:58] ================================================================================
+[2025-05-27 00:04:34] ================================================================================
+[2025-05-27 00:04:34] V11 FAST CORRECTED Stereo DRR Generator
+[2025-05-27 00:04:34] ================================================================================
+[2025-05-27 00:04:34] Fast version with CORRECTED stereo geometry:
+[2025-05-27 00:04:34]   • Use V10's volume rotation (fast)
+[2025-05-27 00:04:34]   • Fix baseline calculation (V10 was wrong)
+[2025-05-27 00:04:34]   • Validate against 402mm chest anatomy
+[2025-05-27 00:04:34]   • Provide correct parameters for reconstruction
+[2025-05-27 00:04:34] ================================================================================
+[2025-05-27 00:04:35] Loading 134 DICOM files...
+[2025-05-27 00:04:35] 
+--- V11 FAST CORRECTED Stereo Generation ---
+[2025-05-27 00:04:35] Using V10's fast volume rotation with CORRECTED geometry calculations
+[2025-05-27 00:04:35] Volume: (134, 512, 512), spacing: [0.9765625 0.9765625 3.       ] mm
+[2025-05-27 00:04:35] CT Volume Analysis:
+[2025-05-27 00:04:35]   Volume size: [512 512 134] voxels
+[2025-05-27 00:04:35]   Voxel spacing: [0.9765625 0.9765625 3.       ] mm
+[2025-05-27 00:04:35]   Physical dimensions: [500. 500. 402.] mm
+[2025-05-27 00:04:35]   Chest depth (Z-direction): 402.0mm
+[2025-05-27 00:04:35] 
+CORRECTED Stereo Parameters:
+[2025-05-27 00:04:35]   Stereo angle: ±1.5° (total 3.0°)
+[2025-05-27 00:04:35]   CORRECTED baseline: 52.4mm
+[2025-05-27 00:04:35]   Focal length: 1000.0mm
+[2025-05-27 00:04:35]   Pixel spacing: 0.4mm
+[2025-05-27 00:04:35] 
+VALIDATION against chest anatomy:
+[2025-05-27 00:04:35]   Expected depth range: 50mm - 402mm
+[2025-05-27 00:04:35]   Expected max disparity: 2617.7 pixels (anterior structures)
+[2025-05-27 00:04:35]   Expected min disparity: 325.6 pixels (posterior structures)
+[2025-05-27 00:04:35]   Disparity range: 325.6 - 2617.7 pixels
+[2025-05-27 00:04:35]   Depth sensitivity: 130884.7mm per pixel disparity
+[2025-05-27 00:04:35]   1 pixel disparity = 130884.7mm depth difference
+[2025-05-27 00:04:35] Attenuation range: [0.00000, 0.16279] mm^-1
+[2025-05-27 00:04:35] Generating CENTER view...
+[2025-05-27 00:04:35] Generating LEFT view...
+[2025-05-27 00:04:35] Rotating volume by -1.5° around z axis
+[2025-05-27 00:04:39]   Original HU range: [-1024, 3034]
+[2025-05-27 00:04:39]   Rotated HU range: [-1204, 3044]
+[2025-05-27 00:04:39] Generating RIGHT view...
+[2025-05-27 00:04:39] Rotating volume by 1.5° around z axis
+[2025-05-27 00:04:43]   Original HU range: [-1024, 3034]
+[2025-05-27 00:04:43]   Rotated HU range: [-1230, 3062]
+[2025-05-27 00:04:43] 
+V11 FAST CORRECTED Results:
+[2025-05-27 00:04:43]   Image difference (L-R): 0.0012
+[2025-05-27 00:04:43]   ⚠️ Minimal stereo differences
+[2025-05-27 00:04:43] ✅ V11 fast corrected stereo generation complete
+[2025-05-27 00:04:45] Saved V11 fast corrected results to outputs/stereo_v11_fast_corrected/comparison_LUNG1-001_AP.png
+[2025-05-27 00:04:45] 
+================================================================================
+[2025-05-27 00:04:45] V11 FAST CORRECTED - FINAL PARAMETERS
+[2025-05-27 00:04:45] Time: 10.3 seconds
+[2025-05-27 00:04:45] 
+[2025-05-27 00:04:45] CORRECTED STEREO PARAMETERS FOR RECONSTRUCTION:
+[2025-05-27 00:04:45]   Baseline: 52.4mm
+[2025-05-27 00:04:45]   Focal length: 1000.0mm
+[2025-05-27 00:04:45]   Pixel spacing: 0.4mm
+[2025-05-27 00:04:45] 
+[2025-05-27 00:04:45] VALIDATION AGAINST CHEST ANATOMY:
+[2025-05-27 00:04:45]   Chest depth: 402mm
+[2025-05-27 00:04:45]   Expected disparity range: 325.6 - 2617.7 pixels
+[2025-05-27 00:04:45]   Depth sensitivity: 130884.7mm per pixel
+[2025-05-27 00:04:45] 
+[2025-05-27 00:04:45] STEREO QUALITY:
+[2025-05-27 00:04:45]   Image difference: 0.0012
+[2025-05-27 00:04:45]   Status: ⚠️ May need larger baseline
+[2025-05-27 00:04:45] 
+[2025-05-27 00:04:45] Output: outputs/stereo_v11_fast_corrected
+[2025-05-27 00:04:45] ================================================================================
+[2025-05-27 00:06:26] ================================================================================
+[2025-05-27 00:06:26] V11 FAST CORRECTED Stereo DRR Generator
+[2025-05-27 00:06:26] ================================================================================
+[2025-05-27 00:06:26] Fast version with CORRECTED stereo geometry:
+[2025-05-27 00:06:26]   • Use V10's volume rotation (fast)
+[2025-05-27 00:06:26]   • Fix baseline calculation (V10 was wrong)
+[2025-05-27 00:06:26]   • Validate against 402mm chest anatomy
+[2025-05-27 00:06:26]   • Provide correct parameters for reconstruction
+[2025-05-27 00:06:26] ================================================================================
+[2025-05-27 00:06:26] Loading 134 DICOM files...
+[2025-05-27 00:06:26] 
+--- V11 FAST CORRECTED Stereo Generation ---
+[2025-05-27 00:06:26] Using V10's fast volume rotation with CORRECTED geometry calculations
+[2025-05-27 00:06:26] Volume: (134, 512, 512), spacing: [0.9765625 0.9765625 3.       ] mm
+[2025-05-27 00:06:26] CT Volume Analysis:
+[2025-05-27 00:06:26]   Volume size: [512 512 134] voxels
+[2025-05-27 00:06:26]   Voxel spacing: [0.9765625 0.9765625 3.       ] mm
+[2025-05-27 00:06:26]   Physical dimensions: [500. 500. 402.] mm
+[2025-05-27 00:06:26]   Chest depth (Z-direction): 402.0mm
+[2025-05-27 00:06:26] 
+CORRECTED Stereo Parameters:
+[2025-05-27 00:06:26]   Stereo angle: ±1.5° (total 3.0°)
+[2025-05-27 00:06:26]   CORRECTED baseline: 52.4mm
+[2025-05-27 00:06:26]   Focal length: 1000.0mm
+[2025-05-27 00:06:26]   Pixel spacing: 0.4mm
+[2025-05-27 00:06:26] 
+VALIDATION against chest anatomy:
+[2025-05-27 00:06:26]   Expected depth range: 50mm - 402mm
+[2025-05-27 00:06:26]   Expected max disparity: 2617.7 pixels (anterior structures)
+[2025-05-27 00:06:26]   Expected min disparity: 325.6 pixels (posterior structures)
+[2025-05-27 00:06:26]   Disparity range: 325.6 - 2617.7 pixels
+[2025-05-27 00:06:26]   Depth sensitivity: 130884.7mm per pixel disparity
+[2025-05-27 00:06:26]   1 pixel disparity = 130884.7mm depth difference
+[2025-05-27 00:06:26] Attenuation range: [0.00000, 0.16279] mm^-1
+[2025-05-27 00:06:26] Generating CENTER view...
+[2025-05-27 00:06:26] Generating LEFT view...
+[2025-05-27 00:06:26] Rotating volume by -1.5° around z axis
+[2025-05-27 00:06:30]   Original HU range: [-1024, 3034]
+[2025-05-27 00:06:30]   Rotated HU range: [-1204, 3044]
+[2025-05-27 00:06:30] Generating RIGHT view...
+[2025-05-27 00:06:30] Rotating volume by 1.5° around z axis
+[2025-05-27 00:06:35]   Original HU range: [-1024, 3034]
+[2025-05-27 00:06:35]   Rotated HU range: [-1230, 3062]
+[2025-05-27 00:06:35] 
+V11 FAST CORRECTED Results:
+[2025-05-27 00:06:35]   Image difference (L-R): 0.0009
+[2025-05-27 00:06:35]   ⚠️ Minimal stereo differences
+[2025-05-27 00:06:35] ✅ V11 fast corrected stereo generation complete
+[2025-05-27 00:06:38] Saved V11 fast corrected results to outputs/stereo_v11_fast_corrected/comparison_LUNG1-001_AP.png
+[2025-05-27 00:06:38] 
+================================================================================
+[2025-05-27 00:06:38] V11 FAST CORRECTED - FINAL PARAMETERS
+[2025-05-27 00:06:38] Time: 12.0 seconds
+[2025-05-27 00:06:38] 
+[2025-05-27 00:06:38] CORRECTED STEREO PARAMETERS FOR RECONSTRUCTION:
+[2025-05-27 00:06:38]   Baseline: 52.4mm
+[2025-05-27 00:06:38]   Focal length: 1000.0mm
+[2025-05-27 00:06:38]   Pixel spacing: 0.4mm
+[2025-05-27 00:06:38] 
+[2025-05-27 00:06:38] VALIDATION AGAINST CHEST ANATOMY:
+[2025-05-27 00:06:38]   Chest depth: 402mm
+[2025-05-27 00:06:38]   Expected disparity range: 325.6 - 2617.7 pixels
+[2025-05-27 00:06:38]   Depth sensitivity: 130884.7mm per pixel
+[2025-05-27 00:06:38] 
+[2025-05-27 00:06:38] STEREO QUALITY:
+[2025-05-27 00:06:38]   Image difference: 0.0009
+[2025-05-27 00:06:38]   Status: ⚠️ May need larger baseline
+[2025-05-27 00:06:38] 
+[2025-05-27 00:06:38] Output: outputs/stereo_v11_fast_corrected
+[2025-05-27 00:06:38] ================================================================================
+[2025-05-27 00:08:26] ================================================================================
+[2025-05-27 00:08:26] V11 FAST CORRECTED Stereo DRR Generator
+[2025-05-27 00:08:26] ================================================================================
+[2025-05-27 00:08:26] Fast version with CORRECTED stereo geometry:
+[2025-05-27 00:08:26]   • Use V10's volume rotation (fast)
+[2025-05-27 00:08:26]   • Fix baseline calculation (V10 was wrong)
+[2025-05-27 00:08:26]   • Validate against 402mm chest anatomy
+[2025-05-27 00:08:26]   • Provide correct parameters for reconstruction
+[2025-05-27 00:08:26] ================================================================================
+[2025-05-27 00:08:27] Loading 134 DICOM files...
+[2025-05-27 00:08:27] 
+--- V11 FAST CORRECTED Stereo Generation ---
+[2025-05-27 00:08:27] Using V10's fast volume rotation with CORRECTED geometry calculations
+[2025-05-27 00:08:27] Volume: (134, 512, 512), spacing: [0.9765625 0.9765625 3.       ] mm
+[2025-05-27 00:08:27] CT Volume Analysis:
+[2025-05-27 00:08:27]   Volume size: [512 512 134] voxels
+[2025-05-27 00:08:27]   Voxel spacing: [0.9765625 0.9765625 3.       ] mm
+[2025-05-27 00:08:27]   Physical dimensions: [500. 500. 402.] mm
+[2025-05-27 00:08:27]   Chest depth (Z-direction): 402.0mm
+[2025-05-27 00:08:27] 
+CORRECTED Stereo Parameters:
+[2025-05-27 00:08:27]   Stereo angle: ±1.5° (total 3.0°)
+[2025-05-27 00:08:27]   CORRECTED baseline: 52.4mm
+[2025-05-27 00:08:27]   Focal length: 1000.0mm
+[2025-05-27 00:08:27]   Pixel spacing: 0.4mm
+[2025-05-27 00:08:27] 
+VALIDATION against chest anatomy:
+[2025-05-27 00:08:27]   Expected depth range: 50mm - 402mm
+[2025-05-27 00:08:27]   Expected max disparity: 2617.7 pixels (anterior structures)
+[2025-05-27 00:08:27]   Expected min disparity: 325.6 pixels (posterior structures)
+[2025-05-27 00:08:27]   Disparity range: 325.6 - 2617.7 pixels
+[2025-05-27 00:08:27]   Depth sensitivity: 130884.7mm per pixel disparity
+[2025-05-27 00:08:27]   1 pixel disparity = 130884.7mm depth difference
+[2025-05-27 00:08:27] Attenuation range: [0.00000, 0.16279] mm^-1
+[2025-05-27 00:08:27] Generating CENTER view...
+[2025-05-27 00:08:27] Generating LEFT view...
+[2025-05-27 00:08:27] Rotating volume by -1.5° around z axis
+[2025-05-27 00:08:31]   Original HU range: [-1024, 3034]
+[2025-05-27 00:08:31]   Rotated HU range: [-1204, 3044]
+[2025-05-27 00:08:31] Generating RIGHT view...
+[2025-05-27 00:08:31] Rotating volume by 1.5° around z axis
+[2025-05-27 00:08:35]   Original HU range: [-1024, 3034]
+[2025-05-27 00:08:35]   Rotated HU range: [-1230, 3062]
+[2025-05-27 00:08:35] 
+V11 FAST CORRECTED Results:
+[2025-05-27 00:08:35]   Image difference (L-R): 0.0009
+[2025-05-27 00:08:35]   ⚠️ Minimal stereo differences
+[2025-05-27 00:08:35] ✅ V11 fast corrected stereo generation complete
+[2025-05-27 00:08:38] Saved V11 fast corrected results to outputs/stereo_v11_fast_corrected/comparison_LUNG1-001_AP.png
+[2025-05-27 00:08:38] 
+================================================================================
+[2025-05-27 00:08:38] V11 FAST CORRECTED - FINAL PARAMETERS
+[2025-05-27 00:08:38] Time: 11.5 seconds
+[2025-05-27 00:08:38] 
+[2025-05-27 00:08:38] CORRECTED STEREO PARAMETERS FOR RECONSTRUCTION:
+[2025-05-27 00:08:38]   Baseline: 52.4mm
+[2025-05-27 00:08:38]   Focal length: 1000.0mm
+[2025-05-27 00:08:38]   Pixel spacing: 0.4mm
+[2025-05-27 00:08:38] 
+[2025-05-27 00:08:38] VALIDATION AGAINST CHEST ANATOMY:
+[2025-05-27 00:08:38]   Chest depth: 402mm
+[2025-05-27 00:08:38]   Expected disparity range: 325.6 - 2617.7 pixels
+[2025-05-27 00:08:38]   Depth sensitivity: 130884.7mm per pixel
+[2025-05-27 00:08:38] 
+[2025-05-27 00:08:38] STEREO QUALITY:
+[2025-05-27 00:08:38]   Image difference: 0.0009
+[2025-05-27 00:08:38]   Status: ⚠️ May need larger baseline
+[2025-05-27 00:08:38] 
+[2025-05-27 00:08:38] Output: outputs/stereo_v11_fast_corrected
+[2025-05-27 00:08:38] ================================================================================
+[2025-05-27 00:11:53] ================================================================================
+[2025-05-27 00:11:53] V11 FAST CORRECTED Stereo DRR Generator
+[2025-05-27 00:11:53] ================================================================================
+[2025-05-27 00:11:53] Fast version with CORRECTED stereo geometry:
+[2025-05-27 00:11:53]   • Use V10's volume rotation (fast)
+[2025-05-27 00:11:53]   • Fix baseline calculation (V10 was wrong)
+[2025-05-27 00:11:53]   • Validate against 402mm chest anatomy
+[2025-05-27 00:11:53]   • Provide correct parameters for reconstruction
+[2025-05-27 00:11:53] ================================================================================
+[2025-05-27 00:11:53] Loading 134 DICOM files...
+[2025-05-27 00:11:54] 
+--- V11 FAST CORRECTED Stereo Generation ---
+[2025-05-27 00:11:54] Using V10's fast volume rotation with CORRECTED geometry calculations
+[2025-05-27 00:11:54] Volume: (134, 512, 512), spacing: [0.9765625 0.9765625 3.       ] mm
+[2025-05-27 00:11:54] CT Volume Analysis:
+[2025-05-27 00:11:54]   Volume size: [512 512 134] voxels
+[2025-05-27 00:11:54]   Voxel spacing: [0.9765625 0.9765625 3.       ] mm
+[2025-05-27 00:11:54]   Physical dimensions: [500. 500. 402.] mm
+[2025-05-27 00:11:54]   Chest depth (Z-direction): 402.0mm
+[2025-05-27 00:11:54] 
+CORRECTED Stereo Parameters:
+[2025-05-27 00:11:54]   Stereo angle: ±1.5° (total 3.0°)
+[2025-05-27 00:11:54]   CORRECTED baseline: 52.4mm
+[2025-05-27 00:11:54]   Focal length: 1000.0mm
+[2025-05-27 00:11:54]   Pixel spacing: 0.4mm
+[2025-05-27 00:11:54] 
+VALIDATION against chest anatomy:
+[2025-05-27 00:11:54]   Expected depth range: 50mm - 402mm
+[2025-05-27 00:11:54]   Expected max disparity: 2617.7 pixels (anterior structures)
+[2025-05-27 00:11:54]   Expected min disparity: 325.6 pixels (posterior structures)
+[2025-05-27 00:11:54]   Disparity range: 325.6 - 2617.7 pixels
+[2025-05-27 00:11:54]   Depth sensitivity: 130884.7mm per pixel disparity
+[2025-05-27 00:11:54]   1 pixel disparity = 130884.7mm depth difference
+[2025-05-27 00:11:54] Attenuation range: [0.00000, 0.16279] mm^-1
+[2025-05-27 00:11:54] Generating CENTER view...
+[2025-05-27 00:11:54] Generating LEFT view...
+[2025-05-27 00:11:54] Rotating volume by -1.5° around z axis
+[2025-05-27 00:11:57]   Original HU range: [-1024, 3034]
+[2025-05-27 00:11:57]   Rotated HU range: [-1204, 3044]
+[2025-05-27 00:11:57] Generating RIGHT view...
+[2025-05-27 00:11:57] Rotating volume by 1.5° around z axis
+[2025-05-27 00:12:01]   Original HU range: [-1024, 3034]
+[2025-05-27 00:12:01]   Rotated HU range: [-1230, 3062]
+[2025-05-27 00:12:01] 
+V11 FAST CORRECTED Results:
+[2025-05-27 00:12:01]   Image difference (L-R): 0.0003
+[2025-05-27 00:12:01]   ⚠️ Minimal stereo differences
+[2025-05-27 00:12:01] ✅ V11 fast corrected stereo generation complete
+[2025-05-27 00:12:04] Saved V11 fast corrected results to outputs/stereo_v11_fast_corrected/comparison_LUNG1-001_AP.png
+[2025-05-27 00:12:04] 
+================================================================================
+[2025-05-27 00:12:04] V11 FAST CORRECTED - FINAL PARAMETERS
+[2025-05-27 00:12:04] Time: 10.6 seconds
+[2025-05-27 00:12:04] 
+[2025-05-27 00:12:04] CORRECTED STEREO PARAMETERS FOR RECONSTRUCTION:
+[2025-05-27 00:12:04]   Baseline: 52.4mm
+[2025-05-27 00:12:04]   Focal length: 1000.0mm
+[2025-05-27 00:12:04]   Pixel spacing: 0.4mm
+[2025-05-27 00:12:04] 
+[2025-05-27 00:12:04] VALIDATION AGAINST CHEST ANATOMY:
+[2025-05-27 00:12:04]   Chest depth: 402mm
+[2025-05-27 00:12:04]   Expected disparity range: 325.6 - 2617.7 pixels
+[2025-05-27 00:12:04]   Depth sensitivity: 130884.7mm per pixel
+[2025-05-27 00:12:04] 
+[2025-05-27 00:12:04] STEREO QUALITY:
+[2025-05-27 00:12:04]   Image difference: 0.0003
+[2025-05-27 00:12:04]   Status: ⚠️ May need larger baseline
+[2025-05-27 00:12:04] 
+[2025-05-27 00:12:04] Output: outputs/stereo_v11_fast_corrected
+[2025-05-27 00:12:04] ================================================================================
