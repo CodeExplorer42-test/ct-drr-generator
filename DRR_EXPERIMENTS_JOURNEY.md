@@ -1310,9 +1310,49 @@ Applied research insights from drr_deep_research.md to improve stereo geometry:
 - Fastest execution time of volume rotation approaches
 - Depth map shows anatomical structures
 
+### Stereo Version 13: True Geometry Implementation
+**Script**: `drr_stereo_v13_true_geometry.py`  
+**Status**: ⚠️ **Slow but functional**  
+**Date**: 2025-05-27
+
+#### Approach:
+First implementation of true dual X-ray sources instead of volume rotation:
+- Two separate X-ray sources with convergent geometry
+- Proper ray casting with trilinear interpolation
+- Research-based HU to attenuation conversion
+- 0.75mm ray step size (within optimal range)
+
+#### Technical Implementation:
+- Dual sources positioned 104.7mm apart
+- 5° convergence angle
+- 712×864 detector resolution
+- Full ray casting through volume (615,168 rays per projection)
+- Trilinear interpolation at each ray sample
+
+#### Results:
+- **Processing time**: 784.7 seconds (13+ minutes)
+- **Stereo difference**: 0.2123 (highest achieved)
+- **Depth coverage**: 85.8%
+- **Image quality**: Good anatomical detail
+- **Issue**: Left lung appears cut off (positioning problem)
+
+#### Problems Identified:
+1. **Performance**: 35-87x slower than volume rotation approaches
+2. **Positioning**: Detector/volume alignment cuts off left lung
+3. **Practicality**: Too slow for clinical use
+4. **Stereo quality**: Not genuine stereo X-ray despite dual sources
+
+#### Assessment:
+- First true dual-source implementation
+- Highest stereo difference (0.2123) proves geometric correctness
+- Reasonably good output quality
+- Positioning needs correction for full lung coverage
+- Performance prohibitive for practical use
+
 ---
 *Generated with care by the DRR Development Team*  
-*Latest: V12 Fast Optimized - 2025-05-27 (5° angle, 31.5% coverage, 9.3s)*  
+*Latest: V13 True Geometry - 2025-05-27 (dual sources, 784.7s, positioning issues)*  
+*Previous: V12 Fast Optimized - 2025-05-27 (5° angle, 31.5% coverage, 9.3s)*  
 *Previous: V11 Clinical Rotation - 2025-05-27 (3° angle, 81.6% coverage, 24.2s)*  
 *Previous: V10 Rotation Stereo - 2025-05-26 (3° angle, 8.1% coverage, 19.8s)*  
 *Previous SUCCESS: V6 Optimized Stereo - 2025-05-24 (2.7% real depth)*  
