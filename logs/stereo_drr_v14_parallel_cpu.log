@@ -1,0 +1,114 @@
+[2025-05-28 05:44:32] ================================================================================
+[2025-05-28 05:44:32] V14 Parallel CPU Stereo DRR Generator
+[2025-05-28 05:44:32] ================================================================================
+[2025-05-28 05:44:32] Optimizations:
+[2025-05-28 05:44:32]   • Multiprocessing across all CPU cores
+[2025-05-28 05:44:32]   • Scipy map_coordinates interpolation
+[2025-05-28 05:44:32]   • Vectorized ray operations
+[2025-05-28 05:44:32]   • Memory-efficient chunked processing
+[2025-05-28 05:44:32] ================================================================================
+[2025-05-28 05:44:32] Loading 0 DICOM files...
+[2025-05-28 05:49:08] ================================================================================
+[2025-05-28 05:49:08] V14 Parallel CPU Stereo DRR Generator
+[2025-05-28 05:49:08] ================================================================================
+[2025-05-28 05:49:08] Optimizations:
+[2025-05-28 05:49:08]   â€¢ Multiprocessing across all CPU cores
+[2025-05-28 05:49:08]   â€¢ Scipy map_coordinates interpolation
+[2025-05-28 05:49:08]   â€¢ Vectorized ray operations
+[2025-05-28 05:49:08]   â€¢ Memory-efficient chunked processing
+[2025-05-28 05:49:08] ================================================================================
+[2025-05-28 05:49:08] Loading 50 DICOM files...
+[2025-05-28 05:49:08] 
+--- V14 Parallel CPU Stereo Generation ---
+[2025-05-28 05:49:08] System info: 18 CPU cores, 236GB RAM
+[2025-05-28 05:49:08] Volume center: [-6.4e-05 -6.4e-05  1.5e+00]
+[2025-05-28 05:49:08] Stereo angle: 5.0Â°
+[2025-05-28 05:49:08] Baseline: 104.7mm
+[2025-05-28 05:49:08] 
+Generating LEFT projection with parallel processing...
+[2025-05-28 05:49:08] Attenuation range: [0.00000, 0.15000] mm^-1
+[2025-05-28 05:49:10] Processing 153792 rays (2x2 subsampling)
+[2025-05-28 05:49:10] Using 18 CPU cores
+[2025-05-28 05:49:11] Worker SpawnPoolWorker-1 initialized
+[2025-05-28 05:49:12] Worker SpawnPoolWorker-2 initialized
+[2025-05-28 05:49:13] Worker SpawnPoolWorker-3 initialized
+[2025-05-28 05:49:13] Worker SpawnPoolWorker-4 initialized
+[2025-05-28 05:49:14] Worker SpawnPoolWorker-5 initialized
+[2025-05-28 05:49:15] Worker SpawnPoolWorker-6 initialized
+[2025-05-28 05:49:16] Worker SpawnPoolWorker-7 initialized
+[2025-05-28 05:49:16] Worker SpawnPoolWorker-8 initialized
+[2025-05-28 05:49:17] Worker SpawnPoolWorker-9 initialized
+[2025-05-28 05:49:18] Worker SpawnPoolWorker-10 initialized
+[2025-05-28 05:49:19] Worker SpawnPoolWorker-11 initialized
+[2025-05-28 05:49:20] Worker SpawnPoolWorker-12 initialized
+[2025-05-28 05:49:20] Worker SpawnPoolWorker-13 initialized
+[2025-05-28 05:49:21] Worker SpawnPoolWorker-14 initialized
+[2025-05-28 05:49:22] Worker SpawnPoolWorker-15 initialized
+[2025-05-28 05:49:23] Worker SpawnPoolWorker-16 initialized
+[2025-05-28 05:49:23] Worker SpawnPoolWorker-17 initialized
+[2025-05-28 05:49:24] Worker SpawnPoolWorker-18 initialized
+[2025-05-28 05:49:26] Ray casting complete in 18.4s
+[2025-05-28 05:49:26] Projection range: [0.006, 1.000]
+[2025-05-28 05:49:26] 
+Generating CENTER projection with parallel processing...
+[2025-05-28 05:49:26] Attenuation range: [0.00000, 0.15000] mm^-1
+[2025-05-28 05:49:29] Processing 153792 rays (2x2 subsampling)
+[2025-05-28 05:49:29] Using 18 CPU cores
+[2025-05-28 05:49:29] Worker SpawnPoolWorker-19 initialized
+[2025-05-28 05:49:30] Worker SpawnPoolWorker-20 initialized
+[2025-05-28 05:49:31] Worker SpawnPoolWorker-21 initialized
+[2025-05-28 05:49:32] Worker SpawnPoolWorker-22 initialized
+[2025-05-28 05:49:33] Worker SpawnPoolWorker-23 initialized
+[2025-05-28 05:49:33] Worker SpawnPoolWorker-24 initialized
+[2025-05-28 05:49:34] Worker SpawnPoolWorker-25 initialized
+[2025-05-28 05:49:35] Worker SpawnPoolWorker-26 initialized
+[2025-05-28 05:49:36] Worker SpawnPoolWorker-27 initialized
+[2025-05-28 05:49:37] Worker SpawnPoolWorker-28 initialized
+[2025-05-28 05:49:37] Worker SpawnPoolWorker-29 initialized
+[2025-05-28 05:49:38] Worker SpawnPoolWorker-30 initialized
+[2025-05-28 05:49:39] Worker SpawnPoolWorker-31 initialized
+[2025-05-28 05:49:40] Worker SpawnPoolWorker-32 initialized
+[2025-05-28 05:49:40] Worker SpawnPoolWorker-33 initialized
+[2025-05-28 05:49:41] Worker SpawnPoolWorker-34 initialized
+[2025-05-28 05:49:42] Worker SpawnPoolWorker-35 initialized
+[2025-05-28 05:49:43] Worker SpawnPoolWorker-36 initialized
+[2025-05-28 05:49:45] Ray casting complete in 18.4s
+[2025-05-28 05:49:45] Projection range: [0.007, 1.000]
+[2025-05-28 05:49:45] 
+Generating RIGHT projection with parallel processing...
+[2025-05-28 05:49:45] Attenuation range: [0.00000, 0.15000] mm^-1
+[2025-05-28 05:49:47] Processing 153792 rays (2x2 subsampling)
+[2025-05-28 05:49:47] Using 18 CPU cores
+[2025-05-28 05:49:48] Worker SpawnPoolWorker-37 initialized
+[2025-05-28 05:49:49] Worker SpawnPoolWorker-38 initialized
+[2025-05-28 05:49:50] Worker SpawnPoolWorker-39 initialized
+[2025-05-28 05:49:50] Worker SpawnPoolWorker-40 initialized
+[2025-05-28 05:49:51] Worker SpawnPoolWorker-41 initialized
+[2025-05-28 05:49:52] Worker SpawnPoolWorker-42 initialized
+[2025-05-28 05:49:53] Worker SpawnPoolWorker-43 initialized
+[2025-05-28 05:49:53] Worker SpawnPoolWorker-44 initialized
+[2025-05-28 05:49:54] Worker SpawnPoolWorker-45 initialized
+[2025-05-28 05:49:55] Worker SpawnPoolWorker-46 initialized
+[2025-05-28 05:49:56] Worker SpawnPoolWorker-47 initialized
+[2025-05-28 05:49:57] Worker SpawnPoolWorker-48 initialized
+[2025-05-28 05:49:57] Worker SpawnPoolWorker-49 initialized
+[2025-05-28 05:49:58] Worker SpawnPoolWorker-50 initialized
+[2025-05-28 05:49:59] Worker SpawnPoolWorker-51 initialized
+[2025-05-28 05:50:00] Worker SpawnPoolWorker-52 initialized
+[2025-05-28 05:50:01] Worker SpawnPoolWorker-53 initialized
+[2025-05-28 05:50:01] Worker SpawnPoolWorker-54 initialized
+[2025-05-28 05:50:03] Ray casting complete in 18.5s
+[2025-05-28 05:50:03] Projection range: [0.006, 1.000]
+[2025-05-28 05:50:03] 
+Stereo difference (L-R): 0.1481
+[2025-05-28 05:50:03] Total processing time: 55.3s
+[2025-05-28 05:50:03] 
+Estimating depth from stereo...
+[2025-05-28 05:50:12] Depth coverage: 48.1%
+[2025-05-28 05:50:18] Saved outputs to outputs/stereo_v14_parallel_cpu
+[2025-05-28 05:50:18] 
+================================================================================
+[2025-05-28 05:50:18] V14 COMPLETE - Parallel CPU Implementation
+[2025-05-28 05:50:18] Total time: 70.7 seconds
+[2025-05-28 05:50:18] Expected speedup on 24-core Azure VM: ~10-20x
+[2025-05-28 05:50:18] ================================================================================

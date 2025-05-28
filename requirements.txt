@@ -23,5 +23,8 @@ requests>=2.32.0
 # Scientific computing (for ray-casting interpolation)
 scipy>=1.15.0
 
+# System monitoring for optimization
+psutil>=6.1.0
+
 # Additional packages (automatically installed with above)
 # pydicom (comes with tcia_utils) 

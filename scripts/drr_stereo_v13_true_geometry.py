@@ -42,7 +42,7 @@ def log_message(message):
     print(log_entry)
     
     os.makedirs("logs", exist_ok=True)
-    with open(LOG_FILE, "a") as f:
+    with open(LOG_FILE, "a", encoding='utf-8') as f:
         f.write(log_entry + "\n")
 
 def correct_hu_to_attenuation(hu_values):
@@ -446,7 +446,7 @@ def main():
     log_message("="*80)
     
     dataset = {
-        'path': 'data/tciaDownload/1.3.6.1.4.1.32722.99.99.298991776521342375010861296712563382046',
+        'path': 'data/tciaDownload/1.3.6.1.4.1.14519.5.2.1.6834.5010.189721824525842725510380467695',
         'patient_id': 'LUNG1-001',
         'name': 'NSCLC-Radiomics'
     }

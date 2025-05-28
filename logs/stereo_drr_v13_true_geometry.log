@@ -133,3 +133,214 @@ Estimating depth from stereo...
 [2025-05-27 01:43:00] Time: 784.7 seconds
 [2025-05-27 01:43:00] This is true dual-source stereo, not volume rotation
 [2025-05-27 01:43:00] ================================================================================
+[2025-05-27 18:48:05] ================================================================================
+[2025-05-27 18:48:05] V13 True Stereo Geometry DRR Generator
+[2025-05-27 18:48:05] ================================================================================
+[2025-05-27 18:48:05] Research-based implementation:
+[2025-05-27 18:48:05]   � True dual X-ray sources (not volume rotation)
+[2025-05-27 18:48:05]   � Convergent ray geometry
+[2025-05-27 18:48:05]   � 0.75mm ray step size
+[2025-05-27 18:48:05]   � Correct HU to attenuation conversion
+[2025-05-27 18:48:05] ================================================================================
+[2025-05-27 18:48:05] Loading 0 DICOM files...
+[2025-05-27 18:48:45] ================================================================================
+[2025-05-27 18:48:45] V13 True Stereo Geometry DRR Generator
+[2025-05-27 18:48:45] ================================================================================
+[2025-05-27 18:48:45] Research-based implementation:
+[2025-05-27 18:48:45]   • True dual X-ray sources (not volume rotation)
+[2025-05-27 18:48:45]   • Convergent ray geometry
+[2025-05-27 18:48:45]   • 0.75mm ray step size
+[2025-05-27 18:48:45]   • Correct HU to attenuation conversion
+[2025-05-27 18:48:45] ================================================================================
+[2025-05-27 18:48:45] Loading 0 DICOM files...
+[2025-05-27 18:48:45] ❌ Error: Exception thrown in SimpleITK ImageSeriesReader_Execute: D:\a\SimpleITK\SimpleITK\Code\IO\src\sitkImageSeriesReader.cxx:147:
+sitk::ERROR: File names information is empty. Cannot read series.
+[2025-05-27 18:48:45] Traceback (most recent call last):
+  File "C:\Users\SankaraNarayanan\ct-drr-generator\scripts\drr_stereo_v13_true_geometry.py", line 463, in main
+    ct_volume = reader.Execute()
+  File "C:\Users\SankaraNarayanan\ct-drr-generator\venv\Lib\site-packages\SimpleITK\SimpleITK.py", line 8330, in Execute
+    return _SimpleITK.ImageSeriesReader_Execute(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+RuntimeError: Exception thrown in SimpleITK ImageSeriesReader_Execute: D:\a\SimpleITK\SimpleITK\Code\IO\src\sitkImageSeriesReader.cxx:147:
+sitk::ERROR: File names information is empty. Cannot read series.
+
+[2025-05-27 18:51:35] ================================================================================
+[2025-05-27 18:51:35] V13 True Stereo Geometry DRR Generator
+[2025-05-27 18:51:35] ================================================================================
+[2025-05-27 18:51:35] Research-based implementation:
+[2025-05-27 18:51:35]   • True dual X-ray sources (not volume rotation)
+[2025-05-27 18:51:35]   • Convergent ray geometry
+[2025-05-27 18:51:35]   • 0.75mm ray step size
+[2025-05-27 18:51:35]   • Correct HU to attenuation conversion
+[2025-05-27 18:51:35] ================================================================================
+[2025-05-27 18:51:35] Loading 50 DICOM files...
+[2025-05-27 18:51:35] 
+--- V13 True Stereo Geometry Generation ---
+[2025-05-27 18:51:35] Implementing research-based true dual-source stereo
+[2025-05-27 18:51:35] Volume center: [-6.4e-05 -6.4e-05  1.5e+00]
+[2025-05-27 18:51:35] Stereo angle: 5.0°
+[2025-05-27 18:51:35] Baseline: 104.7mm
+[2025-05-27 18:51:35] Ray step size: 0.75mm
+[2025-05-27 18:51:35] 
+Generating LEFT projection...
+[2025-05-27 18:51:35] Source position: [  -52.34332884 -1200.000064       1.5       ]
+[2025-05-27 18:51:35] Attenuation range: [0.00000, 0.15000] mm^-1
+[2025-05-27 18:51:37] Detector center: [-6.40000000e-05  5.99999936e+02  1.50000000e+00]
+[2025-05-27 18:51:37] Casting 615168 rays...
+[2025-05-27 18:51:37]   Progress: 0.0%
+[2025-05-27 18:51:37]   Progress: 5.8%
+[2025-05-27 18:51:38]   Progress: 11.6%
+[2025-05-27 18:51:38]   Progress: 17.4%
+[2025-05-27 18:51:40]   Progress: 23.1%
+[2025-05-27 18:51:53]   Progress: 28.9%
+[2025-05-27 18:52:13]   Progress: 34.7%
+[2025-05-27 18:52:32]   Progress: 40.5%
+[2025-05-27 18:52:52]   Progress: 46.3%
+[2025-05-27 18:53:12]   Progress: 52.1%
+[2025-05-27 18:53:31]   Progress: 57.9%
+[2025-05-27 18:53:51]   Progress: 63.7%
+[2025-05-27 18:56:33] ================================================================================
+[2025-05-27 18:56:33] V13 True Stereo Geometry DRR Generator
+[2025-05-27 18:56:33] ================================================================================
+[2025-05-27 18:56:33] Research-based implementation:
+[2025-05-27 18:56:33]   • True dual X-ray sources (not volume rotation)
+[2025-05-27 18:56:33]   • Convergent ray geometry
+[2025-05-27 18:56:33]   • 0.75mm ray step size
+[2025-05-27 18:56:33]   • Correct HU to attenuation conversion
+[2025-05-27 18:56:33] ================================================================================
+[2025-05-27 18:56:33] Loading 50 DICOM files...
+[2025-05-27 18:56:33] 
+--- V13 True Stereo Geometry Generation (OPTIMIZED) ---
+[2025-05-27 18:56:33] Implementing research-based true dual-source stereo with parallel processing
+[2025-05-27 18:56:33] System specs: 18 CPU cores, 220.0GB RAM
+[2025-05-27 18:56:33] Volume center: [-6.4e-05 -6.4e-05  1.5e+00]
+[2025-05-27 18:56:33] Volume shape: (50, 512, 512)
+[2025-05-27 18:56:33] Volume spacing: [0.878906 0.878906 3.      ]
+[2025-05-27 18:56:33] Stereo angle: 5.0°
+[2025-05-27 18:56:33] Baseline: 104.7mm
+[2025-05-27 18:56:33] Ray step size: 0.75mm
+[2025-05-27 18:56:33] Chunk size: 12 rows per chunk
+[2025-05-27 18:56:33] 
+Generating LEFT projection (OPTIMIZED)...
+[2025-05-27 18:56:33] Source position: [  -52.34332884 -1200.000064       1.5       ]
+[2025-05-27 18:56:33] Using 18 CPU cores, 220.0GB RAM available
+[2025-05-27 18:56:33] Attenuation range: [0.00000, 0.15000] mm^-1
+[2025-05-27 18:56:35] Detector center: [-6.40000000e-05  5.99999936e+02  1.50000000e+00]
+[2025-05-27 18:56:35] Casting 615168 rays using 18 parallel processes...
+[2025-05-27 18:56:35] Processing 4320 chunks in parallel...
+[2025-05-27 18:57:31]   Progress: 10.0% (432/4320 chunks, 55.8s)
+[2025-05-27 18:58:25]   Progress: 20.0% (864/4320 chunks, 109.9s)
+[2025-05-28 05:37:10] ================================================================================
+[2025-05-28 05:37:10] V13 True Stereo Geometry DRR Generator
+[2025-05-28 05:37:10] ================================================================================
+[2025-05-28 05:37:10] Research-based implementation:
+[2025-05-28 05:37:10]   � True dual X-ray sources (not volume rotation)
+[2025-05-28 05:37:10]   � Convergent ray geometry
+[2025-05-28 05:37:10]   � 0.75mm ray step size
+[2025-05-28 05:37:10]   � Correct HU to attenuation conversion
+[2025-05-28 05:37:10] ================================================================================
+[2025-05-28 05:37:10] Loading 0 DICOM files...
+[2025-05-28 05:41:06] ================================================================================
+[2025-05-28 05:41:06] V13 True Stereo Geometry DRR Generator
+[2025-05-28 05:41:06] ================================================================================
+[2025-05-28 05:41:06] Research-based implementation:
+[2025-05-28 05:41:06]   • True dual X-ray sources (not volume rotation)
+[2025-05-28 05:41:06]   • Convergent ray geometry
+[2025-05-28 05:41:06]   • 0.75mm ray step size
+[2025-05-28 05:41:06]   • Correct HU to attenuation conversion
+[2025-05-28 05:41:06] ================================================================================
+[2025-05-28 05:41:06] Loading 50 DICOM files...
+[2025-05-28 05:41:06] 
+--- V13 True Stereo Geometry Generation ---
+[2025-05-28 05:41:06] Implementing research-based true dual-source stereo
+[2025-05-28 05:41:06] Volume center: [-6.4e-05 -6.4e-05  1.5e+00]
+[2025-05-28 05:41:06] Stereo angle: 5.0°
+[2025-05-28 05:41:06] Baseline: 104.7mm
+[2025-05-28 05:41:06] Ray step size: 0.75mm
+[2025-05-28 05:41:06] 
+Generating LEFT projection...
+[2025-05-28 05:41:06] Source position: [  -52.34332884 -1200.000064       1.5       ]
+[2025-05-28 05:41:06] Attenuation range: [0.00000, 0.15000] mm^-1
+[2025-05-28 05:41:09] Detector center: [-6.40000000e-05  5.99999936e+02  1.50000000e+00]
+[2025-05-28 05:41:09] Casting 615168 rays...
+[2025-05-28 05:41:09]   Progress: 0.0%
+[2025-05-28 05:41:09]   Progress: 5.8%
+[2025-05-28 05:41:09]   Progress: 11.6%
+[2025-05-28 05:41:09]   Progress: 17.4%
+[2025-05-28 05:41:12]   Progress: 23.1%
+[2025-05-28 05:41:25]   Progress: 28.9%
+[2025-05-28 05:41:44]   Progress: 34.7%
+[2025-05-28 05:42:04]   Progress: 40.5%
+[2025-05-28 05:42:23]   Progress: 46.3%
+[2025-05-28 05:42:43]   Progress: 52.1%
+[2025-05-28 05:43:02]   Progress: 57.9%
+[2025-05-28 05:43:22]   Progress: 63.7%
+[2025-05-28 05:43:42]   Progress: 69.4%
+[2025-05-28 05:43:59]   Progress: 75.2%
+[2025-05-28 05:44:05]   Progress: 81.0%
+[2025-05-28 05:44:06]   Progress: 86.8%
+[2025-05-28 05:44:06]   Progress: 92.6%
+[2025-05-28 05:44:06]   Progress: 98.4%
+[2025-05-28 05:44:06] Ray casting complete. Projection range: [0.006, 1.000]
+[2025-05-28 05:44:06] 
+Generating CENTER projection...
+[2025-05-28 05:44:06] Source position: [-6.40000000e-05 -1.20000006e+03  1.50000000e+00]
+[2025-05-28 05:44:06] Attenuation range: [0.00000, 0.15000] mm^-1
+[2025-05-28 05:44:09] Detector center: [-6.40000000e-05  5.99999936e+02  1.50000000e+00]
+[2025-05-28 05:44:09] Casting 615168 rays...
+[2025-05-28 05:44:09]   Progress: 0.0%
+[2025-05-28 05:44:09]   Progress: 5.8%
+[2025-05-28 05:44:09]   Progress: 11.6%
+[2025-05-28 05:44:09]   Progress: 17.4%
+[2025-05-28 05:44:12]   Progress: 23.1%
+[2025-05-28 05:44:25]   Progress: 28.9%
+[2025-05-28 05:44:44]   Progress: 34.7%
+[2025-05-28 05:45:04]   Progress: 40.5%
+[2025-05-28 05:45:23]   Progress: 46.3%
+[2025-05-28 05:45:43]   Progress: 52.1%
+[2025-05-28 05:46:02]   Progress: 57.9%
+[2025-05-28 05:46:22]   Progress: 63.7%
+[2025-05-28 05:46:41]   Progress: 69.4%
+[2025-05-28 05:46:59]   Progress: 75.2%
+[2025-05-28 05:47:05]   Progress: 81.0%
+[2025-05-28 05:47:06]   Progress: 86.8%
+[2025-05-28 05:47:06]   Progress: 92.6%
+[2025-05-28 05:47:06]   Progress: 98.4%
+[2025-05-28 05:47:06] Ray casting complete. Projection range: [0.007, 1.000]
+[2025-05-28 05:47:06] 
+Generating RIGHT projection...
+[2025-05-28 05:47:06] Source position: [   52.34320084 -1200.000064       1.5       ]
+[2025-05-28 05:47:06] Attenuation range: [0.00000, 0.15000] mm^-1
+[2025-05-28 05:47:08] Detector center: [-6.40000000e-05  5.99999936e+02  1.50000000e+00]
+[2025-05-28 05:47:08] Casting 615168 rays...
+[2025-05-28 05:47:08]   Progress: 0.0%
+[2025-05-28 05:47:09]   Progress: 5.8%
+[2025-05-28 05:47:09]   Progress: 11.6%
+[2025-05-28 05:47:09]   Progress: 17.4%
+[2025-05-28 05:47:12]   Progress: 23.1%
+[2025-05-28 05:47:25]   Progress: 28.9%
+[2025-05-28 05:47:44]   Progress: 34.7%
+[2025-05-28 05:48:04]   Progress: 40.5%
+[2025-05-28 05:48:23]   Progress: 46.3%
+[2025-05-28 05:48:43]   Progress: 52.1%
+[2025-05-28 05:49:02]   Progress: 57.9%
+[2025-05-28 05:49:22]   Progress: 63.7%
+[2025-05-28 05:49:43]   Progress: 69.4%
+[2025-05-28 05:50:01]   Progress: 75.2%
+[2025-05-28 05:50:08]   Progress: 81.0%
+[2025-05-28 05:50:08]   Progress: 86.8%
+[2025-05-28 05:50:09]   Progress: 92.6%
+[2025-05-28 05:50:09]   Progress: 98.4%
+[2025-05-28 05:50:09] Ray casting complete. Projection range: [0.006, 1.000]
+[2025-05-28 05:50:09] 
+Stereo difference (L-R): 0.1482
+[2025-05-28 05:50:09] 
+Estimating depth from stereo...
+[2025-05-28 05:50:18] Depth coverage: 48.1%
+[2025-05-28 05:50:22] Saved outputs to outputs/stereo_v13_true_geometry
+[2025-05-28 05:50:22] 
+================================================================================
+[2025-05-28 05:50:22] V13 COMPLETE - True Stereo Geometry
+[2025-05-28 05:50:22] Time: 556.4 seconds
+[2025-05-28 05:50:22] This is true dual-source stereo, not volume rotation
+[2025-05-28 05:50:22] ================================================================================
